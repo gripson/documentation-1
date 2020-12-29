@@ -27,3 +27,5 @@ sudo -i
 ```bash
 curl -sSL https://raw.githubusercontent.com/open-horizon/devops/master/mgmt-hub/deploy-mgmt-hub.sh | bash
 ```
+### 工作流程
+![all-in-one workflow](../assets/all-in-one-workflow.png)
