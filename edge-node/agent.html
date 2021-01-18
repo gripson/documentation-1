@@ -1,0 +1,792 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Horizon Agent · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="install-the-agent-vm.html" />
+    
+    
+    <link rel="prev" href="../management-hub/switchboard.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Open Horizon介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">架构设计</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../architecture/overall-architecture.html">
+            
+                <a href="../architecture/overall-architecture.html">
+            
+                    
+                    架构总览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../architecture/mms.html">
+            
+                <a href="../architecture/mms.html">
+            
+                    
+                    云-边缘同步服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../architecture/network.html">
+            
+                <a href="../architecture/network.html">
+            
+                    
+                    网络架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../architecture/patterns-policies.html">
+            
+                <a href="../architecture/patterns-policies.html">
+            
+                    
+                    策略引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../architecture/SDO.html">
+            
+                <a href="../architecture/SDO.html">
+            
+                    
+                    Zero-touch之SDO组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">快速开始</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../quick-start/introduction.html">
+            
+                <a href="../quick-start/introduction.html">
+            
+                    
+                    快速入门指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../quick-start/all-in-one-vm.html">
+            
+                <a href="../quick-start/all-in-one-vm.html">
+            
+                    
+                    单机环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../quick-start/distributed-environment-vm.html">
+            
+                <a href="../quick-start/distributed-environment-vm.html">
+            
+                    
+                    分布式环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../quick-start/cli.html">
+            
+                <a href="../quick-start/cli.html">
+            
+                    
+                    快速使用CLI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../quick-start/hybrid-cloud-mgmt.html">
+            
+                <a href="../quick-start/hybrid-cloud-mgmt.html">
+            
+                    
+                    混合云部署管理中心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../quick-start/k8s-node-cluster.html">
+            
+                <a href="../quick-start/k8s-node-cluster.html">
+            
+                    
+                    K8S搭建边缘节点集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">管理中心</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../management-hub/exchange.html">
+            
+                <a href="../management-hub/exchange.html">
+            
+                    
+                    Exchange组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../management-hub/agbot.html">
+            
+                <a href="../management-hub/agbot.html">
+            
+                    
+                    Agbot组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../management-hub/switchboard.html">
+            
+                <a href="../management-hub/switchboard.html">
+            
+                    
+                    Switchboard组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">边缘节点</li>
+        
+        
+    
+        <li class="chapter active" data-level="5.1" data-path="agent.html">
+            
+                <a href="agent.html">
+            
+                    
+                    Horizon Agent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="install-the-agent-vm.html">
+            
+                <a href="install-the-agent-vm.html">
+            
+                    
+                    安装代理 (虚拟环境)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="install-the-agent-device.html">
+            
+                <a href="install-the-agent-device.html">
+            
+                    
+                    安装代理 (边缘设备)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">贡献者指南</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../contributor-guide/introduction.html">
+            
+                <a href="../contributor-guide/introduction.html">
+            
+                    
+                    参与告知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../contributor-guide/document-contribution.html">
+            
+                <a href="../contributor-guide/document-contribution.html">
+            
+                    
+                    文档贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../contributor-guide/code-contribution.html">
+            
+                <a href="../contributor-guide/code-contribution.html">
+            
+                    
+                    代码贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../contributor-guide/local-development.html">
+            
+                <a href="../contributor-guide/local-development.html">
+            
+                    
+                    本地开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Horizon Agent</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><ul><li><span class="title-icon "></span><a href="#horizon-agent-api"><b></b>Horizon Agent API</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h3 id="horizon-agent-api"><a name="horizon-agent-api" class="anchor-navigation-ex-anchor" href="#horizon-agent-api"><i class="fa fa-link" aria-hidden="true"></i></a>Horizon Agent API</h3>
+<p>&#x672C;&#x6587;&#x6863;&#x5305;&#x542B;&#x5728;&#x8FB9;&#x7F18;&#x8282;&#x70B9;&#x4E0A;&#x8FD0;&#x884C;&#x7684;Horizon Agent&#x7684;Horizon REST API&#x3002; API&#x7684;&#x8F93;&#x51FA;&#x4E3A;JSON&#x7D27;&#x51D1;&#x683C;&#x5F0F;&#x3002;&#x4E3A;&#x4E86;&#x83B7;&#x5F97;&#x66F4;&#x597D;&#x7684;&#x89C6;&#x56FE;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;Web&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x4F7F;&#x7528;JSONView&#x6269;&#x5C55;&#x540D;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4ECE;&#x547D;&#x4EE4;&#x884C;&#x754C;&#x9762;&#x4F7F;&#x7528;<code>jq</code>&#x547D;&#x4EE4;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-bash">curl <span class="hljs-_">-s</span> http://&lt;ip&gt;/status | jq <span class="hljs-string">&apos;.&apos;</span>
+</code></pre>
+<h4 id="api-getstatus"><a name="api-getstatus" class="anchor-navigation-ex-anchor" href="#api-getstatus"><i class="fa fa-link" aria-hidden="true"></i></a><strong>API:</strong> GET/status</h4>
+<p>&#x83B7;&#x53D6;&#x8282;&#x70B9;&#x4E0A;&#x7684;&#x8FDE;&#x63A5;&#x6027;&#x548C;&#x914D;&#x7F6E;&#x72B6;&#x6001;&#x3002;&#x8F93;&#x51FA;&#x5305;&#x62EC;&#x4EE3;&#x7406;&#x914D;&#x7F6E;&#x7684;&#x72B6;&#x6001;&#x548C;&#x8282;&#x70B9;&#x7684;&#x8FDE;&#x63A5;&#x6027;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;:</strong></p>
+<p>none</p>
+<p><strong>&#x8FD4;&#x56DE;:</strong></p>
+<p>code:</p>
+<ul>
+<li>200 -- success</li>
+</ul>
+<p>body:</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>subfield</th>
+<th>type</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>configuration</td>
+<td></td>
+<td>json</td>
+<td>the configuration data.</td>
+</tr>
+<tr>
+<td></td>
+<td>exchange_api</td>
+<td>string</td>
+<td>the url for the exchange being used by the Horizon agent.</td>
+</tr>
+<tr>
+<td></td>
+<td>exchange_version</td>
+<td>string</td>
+<td>the current version of the exchange being used.</td>
+</tr>
+<tr>
+<td></td>
+<td>required_minimum_exchange_version</td>
+<td>string</td>
+<td>the required minimum version for the exchange.</td>
+</tr>
+<tr>
+<td></td>
+<td>preferred_exchange_version</td>
+<td>string</td>
+<td>the preferred version for the exchange in order to use all the horizon functions.</td>
+</tr>
+<tr>
+<td></td>
+<td>mms_api</td>
+<td>string</td>
+<td>the url for the model management system.</td>
+</tr>
+<tr>
+<td></td>
+<td>architecture</td>
+<td>string</td>
+<td>the hardware architecture of the node as returned from the Go language API runtime.GOARCH.</td>
+</tr>
+<tr>
+<td></td>
+<td>horizon_version</td>
+<td>string</td>
+<td>The current version of the horiozn running on this node.</td>
+</tr>
+<tr>
+<td>connectivity</td>
+<td></td>
+<td>json</td>
+<td>whether or not the node has network connectivity with some remote sites.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x4F8B;&#x5B50;:</strong></p>
+<pre><code class="lang-bash">curl <span class="hljs-_">-s</span> http://localhost:8510/status | jq <span class="hljs-string">&apos;.&apos;</span>
+{
+  <span class="hljs-string">&quot;configuration&quot;</span>: {
+    <span class="hljs-string">&quot;exchange_api&quot;</span>: <span class="hljs-string">&quot;http://exchange-api:8080/v1/&quot;</span>,
+    <span class="hljs-string">&quot;exchange_version&quot;</span>: <span class="hljs-string">&quot;2.15.1&quot;</span>,
+    <span class="hljs-string">&quot;required_minimum_exchange_version&quot;</span>: <span class="hljs-string">&quot;2.15.1&quot;</span>,
+    <span class="hljs-string">&quot;preferred_exchange_version&quot;</span>: <span class="hljs-string">&quot;2.15.1&quot;</span>,
+    <span class="hljs-string">&quot;mms_api&quot;</span>: <span class="hljs-string">&quot;https://css-api:9443&quot;</span>,
+    <span class="hljs-string">&quot;architecture&quot;</span>: <span class="hljs-string">&quot;amd64&quot;</span>,
+    <span class="hljs-string">&quot;horizon_version&quot;</span>: <span class="hljs-string">&quot;2.24.5&quot;</span>
+  },
+  <span class="hljs-string">&quot;liveHealth&quot;</span>: null
+}
+</code></pre>
+<h4 id="api-getstatusworkers"><a name="api-getstatusworkers" class="anchor-navigation-ex-anchor" href="#api-getstatusworkers"><i class="fa fa-link" aria-hidden="true"></i></a><strong>API:</strong> GET/status/workers</h4>
+<p>&#x83B7;&#x53D6;&#x5F53;&#x524D;Horizo&#x200B;&#x200B;n Agent&#x5DE5;&#x4F5C;&#x4EBA;&#x5458;&#x72B6;&#x6001;&#x548C;&#x72B6;&#x6001;&#x4E8B;&#x52A1;&#x65E5;&#x5FD7;&#x3002;
+<strong>&#x53C2;&#x6570;:</strong></p>
+<p>none</p>
+<p><strong>&#x8FD4;&#x56DE;:</strong></p>
+<p>code:</p>
+<ul>
+<li>200 -- success</li>
+</ul>
+<p>body:</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>subfield</th>
+<th>type</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>workers</td>
+<td></td>
+<td>json</td>
+<td>the current status of each worker and its subworkers.</td>
+</tr>
+<tr>
+<td></td>
+<td>name</td>
+<td>string</td>
+<td>the name of the worker.</td>
+</tr>
+<tr>
+<td></td>
+<td>status</td>
+<td>string</td>
+<td>the status of the worker. The valid values are: added, started, initialized, initialization failed, terminating, t erminated.</td>
+</tr>
+<tr>
+<td></td>
+<td>subworker_status</td>
+<td>json</td>
+<td>the name and the status of the subworkers that are created by this worker.</td>
+</tr>
+<tr>
+<td>worker_status_log</td>
+<td></td>
+<td>string array</td>
+<td>the history of the worker status changes.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x4F8B;&#x5B50;:</strong></p>
+<pre><code class="lang-bash">curl <span class="hljs-_">-s</span>  http://localhost:8510/status/workers |jq
+{
+  <span class="hljs-string">&quot;workers&quot;</span>: {
+    <span class="hljs-string">&quot;AgBot&quot;</span>: {
+      <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;AgBot&quot;</span>,
+      <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-string">&quot;terminated&quot;</span>,
+      <span class="hljs-string">&quot;subworker_status&quot;</span>: {}
+    },
+    <span class="hljs-string">&quot;Agreement&quot;</span>: {
+      <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Agreement&quot;</span>,
+      <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-string">&quot;initialized&quot;</span>,
+      <span class="hljs-string">&quot;subworker_status&quot;</span>: {}
+    },
+    <span class="hljs-string">&quot;Container&quot;</span>: {
+      <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Container&quot;</span>,
+      <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-string">&quot;initialized&quot;</span>,
+      <span class="hljs-string">&quot;subworker_status&quot;</span>: {}
+    },
+    <span class="hljs-string">&quot;ExchangeChanges&quot;</span>: {
+      <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;ExchangeChanges&quot;</span>,
+      <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-string">&quot;initialized&quot;</span>,
+      <span class="hljs-string">&quot;subworker_status&quot;</span>: {}
+    },
+    <span class="hljs-string">&quot;ExchangeMessages&quot;</span>: {
+      <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;ExchangeMessages&quot;</span>,
+      <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-string">&quot;initialized&quot;</span>,
+      <span class="hljs-string">&quot;subworker_status&quot;</span>: {}
+    },
+    <span class="hljs-string">&quot;Governance&quot;</span>: {
+      <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Governance&quot;</span>,
+      <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-string">&quot;initialized&quot;</span>,
+      <span class="hljs-string">&quot;subworker_status&quot;</span>: {
+        <span class="hljs-string">&quot;ContainerGovernor&quot;</span>: <span class="hljs-string">&quot;started&quot;</span>,
+        <span class="hljs-string">&quot;MicroserviceGovernor&quot;</span>: <span class="hljs-string">&quot;started&quot;</span>,
+        <span class="hljs-string">&quot;SurfaceExchErrors&quot;</span>: <span class="hljs-string">&quot;started&quot;</span>
+      }
+    },
+    <span class="hljs-string">&quot;ImageFetch&quot;</span>: {
+      <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;ImageFetch&quot;</span>,
+      <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-string">&quot;initialized&quot;</span>,
+      <span class="hljs-string">&quot;subworker_status&quot;</span>: {}
+    },
+    <span class="hljs-string">&quot;Kube&quot;</span>: {
+      <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Kube&quot;</span>,
+      <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-string">&quot;initialized&quot;</span>,
+      <span class="hljs-string">&quot;subworker_status&quot;</span>: {}
+    },
+    <span class="hljs-string">&quot;Resource&quot;</span>: {
+      <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;Resource&quot;</span>,
+      <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-string">&quot;initialized&quot;</span>,
+      <span class="hljs-string">&quot;subworker_status&quot;</span>: {}
+    }
+  },
+  <span class="hljs-string">&quot;worker_status_log&quot;</span>: [
+    <span class="hljs-string">&quot;2020-03-27 19:06:07 Worker AgBot: started.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:06:07 Worker AgBot: initialization failed.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:06:07 Worker Agreement: started.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:06:07 Worker Governance: started.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:06:07 Worker ExchangeMessages: started.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:06:07 Worker ExchangeMessages: initialized.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:06:07 Worker Container: started.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:06:07 Worker AgBot: terminated.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:06:07 Worker ImageFetch: started.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:06:07 Worker ImageFetch: initialized.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:06:07 Worker Kube: started.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:06:07 Worker Kube: initialized.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:06:07 Worker Resource: started.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:06:07 Worker Resource: initialized.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:06:07 Worker ExchangeChanges: started.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:06:07 Worker ExchangeChanges: initialized.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:06:07 Worker Container: initialized.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:06:12 Worker Agreement: initialized.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:19:32 Worker Governance: subworker SurfaceExchErrors added.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:19:32 Worker Governance: subworker ContainerGovernor added.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:19:32 Worker Governance: subworker MicroserviceGovernor added.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:19:32 Worker Governance: subworker SurfaceExchErrors started.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:19:32 Worker Governance: subworker ContainerGovernor started.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:19:32 Worker Governance: subworker MicroserviceGovernor started.&quot;</span>,
+    <span class="hljs-string">&quot;2020-03-27 19:19:32 Worker Governance: initialized.&quot;</span>
+  ]
+}
+</code></pre>
+<p>&#x5177;&#x4F53;&#x5404;&#x4E2A;API&#x7684;&#x4FE1;&#x606F;&#x8BF7;&#x53C2;&#x9605; <a href="https://github.com/open-horizon/anax/blob/master/docs/api.md" target="_blank">https://github.com/open-horizon/anax/blob/master/docs/api.md</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../management-hub/switchboard.html" class="navigation navigation-prev " aria-label="Previous page: Switchboard组件">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="install-the-agent-vm.html" class="navigation navigation-next " aria-label="Next page: 安装代理 (虚拟环境)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Horizon Agent","level":"5.1","depth":1,"next":{"title":"安装代理 (虚拟环境)","level":"5.2","depth":1,"path":"edge-node/install-the-agent-vm.md","ref":"./edge-node/install-the-agent-vm.md","articles":[]},"previous":{"title":"Switchboard组件","level":"4.3","depth":1,"path":"management-hub/switchboard.md","ref":"./management-hub/switchboard.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/gripson/documentation/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"edge-node/agent.md","mtime":"2021-01-18T00:05:01.106Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-18T00:05:32.987Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

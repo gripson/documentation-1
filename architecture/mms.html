@@ -1,0 +1,641 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>云-边缘同步服务 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="network.html" />
+    
+    
+    <link rel="prev" href="overall-architecture.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Open Horizon介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">架构设计</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="overall-architecture.html">
+            
+                <a href="overall-architecture.html">
+            
+                    
+                    架构总览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="mms.html">
+            
+                <a href="mms.html">
+            
+                    
+                    云-边缘同步服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="network.html">
+            
+                <a href="network.html">
+            
+                    
+                    网络架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="patterns-policies.html">
+            
+                <a href="patterns-policies.html">
+            
+                    
+                    策略引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="SDO.html">
+            
+                <a href="SDO.html">
+            
+                    
+                    Zero-touch之SDO组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">快速开始</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../quick-start/introduction.html">
+            
+                <a href="../quick-start/introduction.html">
+            
+                    
+                    快速入门指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../quick-start/all-in-one-vm.html">
+            
+                <a href="../quick-start/all-in-one-vm.html">
+            
+                    
+                    单机环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../quick-start/distributed-environment-vm.html">
+            
+                <a href="../quick-start/distributed-environment-vm.html">
+            
+                    
+                    分布式环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../quick-start/cli.html">
+            
+                <a href="../quick-start/cli.html">
+            
+                    
+                    快速使用CLI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../quick-start/hybrid-cloud-mgmt.html">
+            
+                <a href="../quick-start/hybrid-cloud-mgmt.html">
+            
+                    
+                    混合云部署管理中心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../quick-start/k8s-node-cluster.html">
+            
+                <a href="../quick-start/k8s-node-cluster.html">
+            
+                    
+                    K8S搭建边缘节点集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">管理中心</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../management-hub/exchange.html">
+            
+                <a href="../management-hub/exchange.html">
+            
+                    
+                    Exchange组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../management-hub/agbot.html">
+            
+                <a href="../management-hub/agbot.html">
+            
+                    
+                    Agbot组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../management-hub/switchboard.html">
+            
+                <a href="../management-hub/switchboard.html">
+            
+                    
+                    Switchboard组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">边缘节点</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../edge-node/agent.html">
+            
+                <a href="../edge-node/agent.html">
+            
+                    
+                    Horizon Agent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../edge-node/install-the-agent-vm.html">
+            
+                <a href="../edge-node/install-the-agent-vm.html">
+            
+                    
+                    安装代理 (虚拟环境)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../edge-node/install-the-agent-device.html">
+            
+                <a href="../edge-node/install-the-agent-device.html">
+            
+                    
+                    安装代理 (边缘设备)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">贡献者指南</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../contributor-guide/introduction.html">
+            
+                <a href="../contributor-guide/introduction.html">
+            
+                    
+                    参与告知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../contributor-guide/document-contribution.html">
+            
+                <a href="../contributor-guide/document-contribution.html">
+            
+                    
+                    文档贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../contributor-guide/code-contribution.html">
+            
+                <a href="../contributor-guide/code-contribution.html">
+            
+                    
+                    代码贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../contributor-guide/local-development.html">
+            
+                <a href="../contributor-guide/local-development.html">
+            
+                    
+                    本地开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >云-边缘同步服务</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x4E91;-&#x8FB9;&#x7F18;&#x540C;&#x6B65;&#x670D;&#x52A1;"><b></b>&#x4E91;-&#x8FB9;&#x7F18;&#x540C;&#x6B65;&#x670D;&#x52A1;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4ECB;&#x7ECD;"><b></b>&#x4ECB;&#x7ECD;</a></li><li><span class="title-icon "></span><a href="#&#x540C;&#x6B65;&#x670D;&#x52A1;&#x7EC4;&#x4EF6;"><b></b>&#x540C;&#x6B65;&#x670D;&#x52A1;&#x7EC4;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#&#x540C;&#x6B65;&#x670D;&#x52A1;&#x4E3B;&#x8981;&#x529F;&#x80FD;"><b></b>&#x540C;&#x6B65;&#x670D;&#x52A1;&#x4E3B;&#x8981;&#x529F;&#x80FD;</a></li><li><span class="title-icon "></span><a href="#&#x5F00;&#x53D1;"><b></b>&#x5F00;&#x53D1;</a></li><li><span class="title-icon "></span><a href="#&#x5B89;&#x5168;&#x6027;"><b></b>&#x5B89;&#x5168;&#x6027;</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="&#x4E91;-&#x8FB9;&#x7F18;&#x540C;&#x6B65;&#x670D;&#x52A1;"><a name="&#x4E91;-&#x8FB9;&#x7F18;&#x540C;&#x6B65;&#x670D;&#x52A1;" class="anchor-navigation-ex-anchor" href="#&#x4E91;-&#x8FB9;&#x7F18;&#x540C;&#x6B65;&#x670D;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E91;-&#x8FB9;&#x7F18;&#x540C;&#x6B65;&#x670D;&#x52A1;</h2>
+<p>&#x53C8;&#x79F0;&#x4E3A;&#x6A21;&#x578B;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;(Model Management System)&#xFF0C;&#x4E3A;&#x4E86;&#x4FBF;&#x4E8E;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x6A21;&#x578B;&#x6216;&#x8005;&#x5927;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x7684;&#x4F20;&#x8F93;&#x3002;</p>
+<h3 id="&#x4ECB;&#x7ECD;"><a name="&#x4ECB;&#x7ECD;" class="anchor-navigation-ex-anchor" href="#&#x4ECB;&#x7ECD;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4ECB;&#x7ECD;</h3>
+<p>&#x4E91;-&#x8FB9;&#x7F18;&#x540C;&#x6B65;&#x670D;&#x52A1;&#x662F;&#x8FB9;&#x7F18;&#x8BA1;&#x7B97;&#x7684;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#x3002;&#x5B83;&#x65E8;&#x5728;&#x901A;&#x8FC7;&#x63D0;&#x4F9B;&#x5DE5;&#x5177;&#x5728;&#x4E91;&#x548C;&#x8FB9;&#x7F18;&#x4E4B;&#x95F4;&#x540C;&#x6B65;&#x5BF9;&#x8C61;&#x6765;&#x7B80;&#x5316;&#x5728;&#x8FB9;&#x7F18;&#x4E0A;&#x8FD0;&#x884C;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x3002;
+&#x540C;&#x6B65;&#x670D;&#x52A1;&#x7684;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5728;&#x4E91;&#x4E2D;&#x521B;&#x5EFA;/&#x66F4;&#x65B0;&#x5BF9;&#x8C61;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x8BE5;&#x5BF9;&#x8C61;&#x81EA;&#x52A8;&#x4F20;&#x64AD;&#x5230;&#x76F8;&#x5173;&#x7684;&#x8FB9;&#x7F18;&#x8282;&#x70B9;&#x3002;&#x540C;&#x6837;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x8FB9;&#x7F18;&#x66F4;&#x65B0;&#x5BF9;&#x8C61;&#x5E76;&#x5C06;&#x5176;&#x4EA4;&#x4ED8;&#x7ED9;&#x4E91;&#x3002;&#x793A;&#x4F8B;&#x7528;&#x4F8B;&#x5305;&#x62EC;&#x914D;&#x7F6E;&#xFF0C;&#x89C4;&#x5219;&#x548C;&#x64CD;&#x4F5C;&#xFF0C;&#x7528;&#x6237;&#x9996;&#x9009;&#x9879;&#xFF0C;AI&#x6A21;&#x578B;&#xFF0C;&#x76D1;&#x89C6;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#xFF0C;&#x90E8;&#x7F72;&#x6587;&#x4EF6;&#x7B49;&#x7684;&#x540C;&#x6B65;&#x3002;</p>
+<h3 id="&#x540C;&#x6B65;&#x670D;&#x52A1;&#x7EC4;&#x4EF6;"><a name="&#x540C;&#x6B65;&#x670D;&#x52A1;&#x7EC4;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x540C;&#x6B65;&#x670D;&#x52A1;&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x540C;&#x6B65;&#x670D;&#x52A1;&#x7EC4;&#x4EF6;</h3>
+<p>&#x540C;&#x6B65;&#x670D;&#x52A1;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x7EC4;&#x4EF6;&#xFF1A;</p>
+<ul>
+<li>&#x5728;&#x4E91;&#x7AEF;&#x8FD0;&#x884C;&#x7684;Cloud Sync Service&#xFF08;CSS&#xFF09;&#x3002; CSS&#x652F;&#x6301;&#x591A;&#x79DF;&#x6237;&#xFF0C;&#x9AD8;&#x53EF;&#x7528;&#x6027;&#x548C;&#x8D1F;&#x8F7D;&#x5E73;&#x8861;&#x3002;</li>
+<li>&#x5728;&#x8FB9;&#x7F18;&#x8282;&#x70B9;&#x4E2D;&#x8FD0;&#x884C;&#x7684;&#x8FB9;&#x7F18;&#x540C;&#x6B65;&#x670D;&#x52A1;&#xFF08;ESS&#xFF09;&#x3002;&#x6BCF;&#x4E2A;ESS&#x8282;&#x70B9;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x7C7B;&#x578B;&#x548C;&#x552F;&#x4E00;&#x7684;ID&#x3002;</li>
+</ul>
+<p>&#x5047;&#x8BBE;&#x7528;&#x6237;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6709;&#x8FB9;&#x7F18;&#x90E8;&#x5206;&#x548C;&#x4E91;&#x90E8;&#x5206;&#x3002;&#x8BE5;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4F7F;&#x7528;REST&#x8C03;&#x7528;&#x4E0E;&#x540C;&#x6B65;&#x670D;&#x52A1;&#xFF08;CSS&#x548C;ESS&#xFF09;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#x3002; 
+CSS&#x548C;ESS&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;MQTT&#x6216;HTTP&#x8FDB;&#x884C;&#x3002;&#x540C;&#x6B65;&#x670D;&#x52A1;&#x65E8;&#x5728;&#x4E0E;Watson IoT Platform&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x5E76;&#x901A;&#x8FC7;&#x5B83;&#x6267;&#x884C;&#x6240;&#x6709;&#x901A;&#x4FE1;&#x3002;&#x8FD8;&#x652F;&#x6301;&#x901A;&#x8FC7;HTTP/HTTPS&#x6216;&#x901A;&#x8FC7;MQTT&#x4EE3;&#x7406;&#x76F4;&#x63A5;&#x901A;&#x4FE1;&#x3002;</p>
+<p><img src="../assets/mms.png" alt="MMS"></p>
+<p>&#x8BE5;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5411;CSS / ESS&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x8BE5;&#x5BF9;&#x8C61;&#x5305;&#x62EC;&#x5B9A;&#x4E49;&#x4E86;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x7684;&#x5143;&#x6570;&#x636E;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x662F;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x3002; &#x5BF9;&#x8C61;&#x7684;&#x5143;&#x6570;&#x636E;&#x5305;&#x62EC;&#x5BF9;&#x8C61;&#x7684;&#x76EE;&#x7684;&#x5730;&#x3002; 
+&#x540C;&#x6B65;&#x670D;&#x52A1;&#x652F;&#x6301;&#x7075;&#x6D3B;&#x7684;&#x5BFB;&#x5740;&#xFF0C;&#x8BE5;&#x5BFB;&#x5740;&#x5141;&#x8BB8;&#x5C06;&#x5BF9;&#x8C61;&#x4ECE;CSS&#x53D1;&#x9001;&#x5230;&#xFF1A;</p>
+<ul>
+<li>&#x5355;&#x4E2A;ESS&#xFF08;&#x4F7F;&#x7528;ESS ID&#xFF09;&#x3002;</li>
+<li>&#x67D0;&#x4E2A;&#x7C7B;&#x578B;&#x7684;&#x6240;&#x6709;ESS&#x8282;&#x70B9;&#x3002;</li>
+<li>&#x4EFB;&#x4F55;&#x4E00;&#x7EC4;ESS&#x8282;&#x70B9;&#x3002;</li>
+<li>&#x6240;&#x6709;ESS&#x8282;&#x70B9;&#x3002;</li>
+</ul>
+<p>&#x5F53;ESS / CSS&#x4E0A;&#x6536;&#x5230;&#x5BF9;&#x8C61;&#x7684;&#x66F4;&#x65B0;&#x65F6;&#xFF0C;&#x540C;&#x6B65;&#x670D;&#x52A1;&#x5C06;&#x901A;&#x77E5;&#x8BE5;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x3002; 
+&#x7136;&#x540E;&#xFF0C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5E76;&#x5904;&#x7406;&#x5BF9;&#x8C61;&#x3002; &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5904;&#x7406;&#x5B8C;&#x5BF9;&#x8C61;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x6807;&#x8BB0;&#x4E3A;&#x5DF2;&#x4F7F;&#x7528;&#x3002; &#x540C;&#x6B65;&#x670D;&#x52A1;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x67E5;&#x770B;&#x5BF9;&#x8C61;&#x7684;&#x4F20;&#x9012;&#x72B6;&#x6001;&#x3002;</p>
+<h3 id="&#x540C;&#x6B65;&#x670D;&#x52A1;&#x4E3B;&#x8981;&#x529F;&#x80FD;"><a name="&#x540C;&#x6B65;&#x670D;&#x52A1;&#x4E3B;&#x8981;&#x529F;&#x80FD;" class="anchor-navigation-ex-anchor" href="#&#x540C;&#x6B65;&#x670D;&#x52A1;&#x4E3B;&#x8981;&#x529F;&#x80FD;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x540C;&#x6B65;&#x670D;&#x52A1;&#x4E3B;&#x8981;&#x529F;&#x80FD;</h3>
+<p>&#x4EE5;&#x4E0B;&#x662F;&#x540C;&#x6B65;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x7684;&#x4E3B;&#x8981;&#x529F;&#x80FD;&#x7684;&#x5217;&#x8868;&#xFF1A;</p>
+<ol>
+<li>&#x540C;&#x6B65;&#x670D;&#x52A1;&#x5904;&#x7406;&#x4E91;&#x4E0E;&#x8FB9;&#x7F18;&#x4E4B;&#x95F4;&#x7684;&#x6240;&#x6709;&#x901A;&#x4FE1;&#x65B9;&#x9762;:
+&#x901A;&#x4FE1;&#x5931;&#x8D25;&#xFF0C;&#x8FB9;&#x7F18;&#x8282;&#x70B9;&#x4E0D;&#x53EF;&#x7528;&#xFF0C;&#x6700;&#x5927;&#x6D88;&#x606F;&#x5927;&#x5C0F;&#x9650;&#x5236;&#xFF0C;&#x4E0B;&#x8F7D;&#x6062;&#x590D;&#xFF0C;&#x91CD;&#x542F;&#x540E;&#x7684;&#x6301;&#x4E45;&#x6027;&#x7B49;&#x7B49;&#x3002;</li>
+<li>&#x7B80;&#x5355;&#x7075;&#x6D3B;&#x5730;&#x63A7;&#x5236;&#x5BF9;&#x8C61;:
+&#x521B;&#x5EFA;/&#x66F4;&#x65B0;/&#x8BFB;&#x53D6;/&#x5220;&#x9664;&#x64CD;&#x4F5C;&#xFF0C;&#x7248;&#x672C;&#xFF0C;&#x6301;&#x4E45;&#x6027;&#xFF0C;&#x5230;&#x671F;&#x65F6;&#x95F4;&#xFF0C;&#x6FC0;&#x6D3B;&#x65F6;&#x95F4;&#xFF0C;&#x4EA4;&#x4ED8;&#x65F6;&#x5220;&#x9664;&#x7B49;&#x3002;</li>
+<li>&#x7075;&#x6D3B;&#x7684;&#x5BF9;&#x8C61;&#x5206;&#x914D;:
+&#x52A8;&#x6001;&#x5BFB;&#x5740;&#xFF0C;&#x76F4;&#x63A5;&#x5411;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x5199;&#x5165;/&#x4ECE;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x8BFB;&#x53D6;&#xFF08;&#x6587;&#x4EF6;&#x4F20;&#x8F93;&#xFF09;&#xFF0C;&#x4F7F;&#x7528;&#x6570;&#x636E;&#x94FE;&#x63A5;&#x7B49;&#x3002;</li>
+<li>&#x8FB9;&#x7F18;&#x8282;&#x70B9;&#x91CD;&#x65B0;/&#x542F;&#x52A8;&#x65F6;&#x81EA;&#x52A8;&#x540C;&#x6B65;</li>
+<li>&#x8DDF;&#x8E2A;&#x4EA4;&#x8D27;&#x72B6;&#x6001;:
+&#x63D0;&#x4F9B;&#x5BF9;&#x8C61;&#x5728;&#x6BCF;&#x4E2A;&#x76EE;&#x7684;&#x5730;&#x7684;&#x4EA4;&#x4ED8;&#x72B6;&#x6001;&#x7684;&#x6307;&#x793A;&#x3002;</li>
+<li>&#x8DDF;&#x8E2A;&#x8FB9;&#x7F18;&#x8282;&#x70B9;:
+&#x5141;&#x8BB8;&#x7528;&#x6237;&#x67E5;&#x770B;&#x8FB9;&#x7F18;&#x8282;&#x70B9;</li>
+<li>&#x4E00;&#x4E2A;&#x5B89;&#x5168;&#x6A21;&#x578B;&#x53EF;&#x4EE5;&#x63A7;&#x5236;&#x8C01;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;/&#x66F4;&#x65B0;/&#x8BFB;&#x53D6;/&#x5220;&#x9664;&#x54EA;&#x4E9B;&#x5BF9;&#x8C61;&#x4EE5;&#x53CA;&#x53EF;&#x4EE5;&#x5C06;&#x8FD9;&#x4E9B;&#x5BF9;&#x8C61;&#x53D1;&#x9001;&#x5230;&#x54EA;&#x4E9B;&#x8FB9;&#x7F18;&#x8282;&#x70B9;&#x3002;
+&#x8BF7;&#x53C2;&#x9605;<a href="#&#x5B89;&#x5168;&#x6027;">&#x5B89;&#x5168;&#x6027;</a>&#x90E8;&#x5206;</li>
+</ol>
+<h3 id="&#x5F00;&#x53D1;"><a name="&#x5F00;&#x53D1;" class="anchor-navigation-ex-anchor" href="#&#x5F00;&#x53D1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5F00;&#x53D1;</h3>
+<p>&#x5173;&#x4E8E;&#x4E91;-&#x8FB9;&#x7F18;&#x540C;&#x6B65;&#x670D;&#x52A1;&#x7EC4;&#x4EF6;&#x7684;&#x5F00;&#x53D1;&#xFF0C;&#x8FD0;&#x884C;&#xFF0C;&#x4F7F;&#x7528;&#x4F8B;&#x5B50;&#x4EE5;&#x53CA;&#x751F;&#x6210;&#x76F8;&#x5E94;&#x7684;swagger&#x6587;&#x6863;&#x6307;&#x5357;&#x8BF7;&#x53C2;&#x9605;<a href="https://github.com/open-horizon/edge-sync-service" target="_blank">&#x6B64;&#x94FE;&#x63A5;</a></p>
+<h3 id="&#x5B89;&#x5168;&#x6027;"><a name="&#x5B89;&#x5168;&#x6027;" class="anchor-navigation-ex-anchor" href="#&#x5B89;&#x5168;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B89;&#x5168;&#x6027;</h3>
+<p>&#x540C;&#x6B65;&#x670D;&#x52A1;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x5B89;&#x5168;&#x7684;&#x57FA;&#x7840;&#x7ED3;&#x6784;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x8BE5;&#x57FA;&#x7840;&#x7ED3;&#x6784;&#x4E0A;&#x4ECE;&#x4E91;&#x5230;&#x8FB9;&#x7F18;&#x4EE5;&#x53CA;&#x4ECE;&#x8FB9;&#x7F18;&#x5230;&#x4E91;&#x540C;&#x6B65;&#x5BF9;&#x8C61;&#x3002;&#x4E3A;&#x6B64;&#xFF0C;&#x901A;&#x5E38;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x548C;&#x6388;&#x6743;&#x624D;&#x80FD;&#x6267;&#x884C;&#x6240;&#x6709;&#x4EFB;&#x52A1;&#x3002;&#x9700;&#x8981;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x65F6;&#xFF0C;&#x5BF9;&#x8C61;&#x548C;&#x8FB9;&#x7F18;&#x8282;&#x70B9;&#xFF08;&#x79F0;&#x4E3A;&#x76EE;&#x6807;&#xFF09;&#x5747;&#x53D7;&#x5230;&#x4FDD;&#x62A4;&#x3002;</p>
+<h4 id="&#x540C;&#x6B65;&#x670D;&#x52A1;&#x8BA4;&#x8BC1;"><a name="&#x540C;&#x6B65;&#x670D;&#x52A1;&#x8BA4;&#x8BC1;" class="anchor-navigation-ex-anchor" href="#&#x540C;&#x6B65;&#x670D;&#x52A1;&#x8BA4;&#x8BC1;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x540C;&#x6B65;&#x670D;&#x52A1;&#x8BA4;&#x8BC1;</h4>
+<p>&#x9700;&#x8981;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x901A;&#x8FC7;Sync Service&#x7684;RESTful API&#x8BBF;&#x95EE;Sync Service&#x7684;&#x6240;&#x6709;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5728;&#x6240;&#x6709;RESTful API&#x8C03;&#x7528;&#x4E0A;&#x63D0;&#x4F9B;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5BC6;&#x94A5;&#x548C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5BC6;&#x94A5;&#x5BF9;&#x3002;</p>
+<ul>
+<li>&#x6BCF;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;SDK&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x4E0E;&#x8BED;&#x8A00;&#x6709;&#x5173;&#x7684;&#x9002;&#x5F53;API&#x8C03;&#x7528;&#xFF0C;&#x4EE5;&#x8BBE;&#x7F6E;&#x5BF9;&#x5BA2;&#x6237;&#x7AEF;&#x53E5;&#x67C4;&#x8FDE;&#x63A5;&#x7684;Sync Service&#x670D;&#x52A1;&#x5668;&#x7684;RESTful API&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x7531;&#x5BA2;&#x6237;&#x7AEF;&#x201C;&#x53E5;&#x67C4;&#x201D;&#x4F7F;&#x7528;&#x7684;&#x5E94;&#x7528;&#x5BC6;&#x94A5;&#x548C;&#x5E94;&#x7528;&#x5BC6;&#x94A5;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x4EBA;&#x672A;&#x4F7F;&#x7528;&#x5BA2;&#x6237;&#x7AEF;SDK&#x4E4B;&#x4E00;&#xFF0C;&#x800C;&#x662F;&#x4E00;&#x4E2A;&#x4EBA;&#x8FDB;&#x884C;RESTful API&#x8C03;&#x7528;&#xFF0C;&#x5219;&#x6BCF;&#x6B21;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x90FD;&#x5FC5;&#x987B;&#x5728;&#x57FA;&#x672C;&#x6388;&#x6743;&#x6807;&#x5934;&#x4E2D;&#x5C06;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5BC6;&#x94A5;&#x548C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x79D8;&#x5BC6;&#x4F5C;&#x4E3A;&#x7528;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#x53D1;&#x9001;&#x3002;</li>
+</ul>
+<p>&#x4E0E;Cloud Sync Service&#x5B9E;&#x4F8B;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#x65F6;&#xFF0C;&#x901A;&#x5E38;&#x8FD8;&#x9700;&#x8981;Edge Sync Service&#x5B9E;&#x4F8B;&#x6765;&#x6807;&#x8BC6;&#x81EA;&#x5DF1;&#x3002;</p>
+<p>&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5BC6;&#x94A5;&#x548C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5BC6;&#x94A5;&#x5BF9;&#x7684;&#x786E;&#x5207;&#x5F62;&#x5F0F;&#x53D6;&#x51B3;&#x4E8E;&#x914D;&#x7F6E;&#x4E86;&#x4E0E;&#x4E4B;&#x901A;&#x4FE1;&#x7684;&#x540C;&#x6B65;&#x670D;&#x52A1;&#x5B9E;&#x4F8B;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5BC6;&#x94A5;&#x548C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x79D8;&#x5BC6;&#x5BF9;&#x7528;&#x4E8E;&#x786E;&#x5B9A;&#x548C;&#x9A8C;&#x8BC1;&#x7528;&#x6237;&#x7684;&#x8EAB;&#x4EFD;&#x3002;&#x7528;&#x6237;&#x7684;&#x8EAB;&#x4EFD;&#x5305;&#x62EC;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x7528;&#x6237;&#x6240;&#x5C5E;&#x7684;&#x7EC4;&#x7EC7;&#x4EE5;&#x53CA;&#x7528;&#x6237;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x662F;&#x7EC4;&#x7EC7;&#x7BA1;&#x7406;&#x5458;&#xFF0C;&#x5E38;&#x89C4;&#x7528;&#x6237;&#x6216;&#x8FB9;&#x7F18;&#x8282;&#x70B9;&#x3002;</p>
+<p>&#x5E94;&#x5F53;&#x6CE8;&#x610F;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x540C;&#x6B65;&#x670D;&#x52A1;&#x8BBE;&#x7F6E;&#x4E3A;&#x5B8C;&#x5168;&#x4E0D;&#x9700;&#x8981;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x3002;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x867D;&#x7136;&#x9700;&#x8981;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#xFF0C;&#x4F46;&#x4F7F;&#x5927;&#x591A;&#x6570;&#x7528;&#x6237;&#x6210;&#x4E3A;&#x7EC4;&#x7EC7;&#x7BA1;&#x7406;&#x5458;&#x3002;&#x8FD9;&#x79CD;&#x8BBE;&#x7F6E;&#x4E0D;&#x5E94;&#x5728;&#x751F;&#x4EA7;&#x8BBE;&#x7F6E;&#x4E2D;&#x4F7F;&#x7528;&#x3002;</p>
+<h4 id="&#x540C;&#x6B65;&#x670D;&#x52A1;&#x6388;&#x6743;"><a name="&#x540C;&#x6B65;&#x670D;&#x52A1;&#x6388;&#x6743;" class="anchor-navigation-ex-anchor" href="#&#x540C;&#x6B65;&#x670D;&#x52A1;&#x6388;&#x6743;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x540C;&#x6B65;&#x670D;&#x52A1;&#x6388;&#x6743;</h4>
+<p>&#x540C;&#x6B65;&#x670D;&#x52A1;&#x901A;&#x8FC7;&#x9650;&#x5236;&#x5BF9;&#x5BF9;&#x8C61;&#x7C7B;&#x578B;&#x7684;&#x8BBF;&#x95EE;&#x6765;&#x4FDD;&#x62A4;&#x5BF9;&#x8C61;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x5B83;&#x901A;&#x8FC7;&#x9650;&#x5236;&#x5BF9;&#x76EE;&#x6807;&#x7C7B;&#x578B;&#x7684;&#x8BBF;&#x95EE;&#x6765;&#x4FDD;&#x62A4;&#x8FB9;&#x7F18;&#x8282;&#x70B9;&#x3002;</p>
+<h5 id="&#x7533;&#x8BF7;&#x6388;&#x6743;"><a name="&#x7533;&#x8BF7;&#x6388;&#x6743;" class="anchor-navigation-ex-anchor" href="#&#x7533;&#x8BF7;&#x6388;&#x6743;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7533;&#x8BF7;&#x6388;&#x6743;</h5>
+<p>&#x4E3A;&#x4E86;&#x4F7F;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x5728;Sync Service&#x4E2D;&#x521B;&#x5EFA;&#xFF0C;&#x8BFB;&#x53D6;&#xFF0C;&#x66F4;&#x65B0;&#x6216;&#x5220;&#x9664;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x5FC5;&#x987B;&#x6709;&#x6743;&#x8BBF;&#x95EE;&#x6240;&#x8BA8;&#x8BBA;&#x5BF9;&#x8C61;&#x7684;&#x5BF9;&#x8C61;&#x7C7B;&#x578B;&#x3002;&#x8BE5;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x65B9;&#x5F0F;&#x6267;&#x884C;&#x6B64;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<ol>
+<li>&#x5DF2;&#x901A;&#x8FC7;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x8FDB;&#x884C;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#xFF0C;&#x8BE5;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x662F;&#x5BF9;&#x8C61;&#x7EC4;&#x7EC7;&#x4E2D;&#x7684;&#x7EC4;&#x7EC7;&#x7BA1;&#x7406;&#x5458;&#x3002;</li>
+<li>&#x901A;&#x8FC7;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x4E3A;&#x5E38;&#x89C4;&#x7528;&#x6237;&#x540E;&#xFF0C;&#x5176;&#x7528;&#x6237;&#x540D;&#x5C06;&#x5728;&#x76F8;&#x5173;&#x5BF9;&#x8C61;&#x7C7B;&#x578B;&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x5217;&#x8868;&#x4E2D;&#x3002;</li>
+<li>&#x6709;&#x5173;&#x5BF9;&#x8C61;&#x7C7B;&#x578B;&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x5217;&#x8868;&#x5DF2;&#x6807;&#x8BB0;&#x4E3A;&#x53EF;&#x516C;&#x5F00;&#x8BBF;&#x95EE;&#x3002;</li>
+</ol>
+<p>&#x9664;&#x4E86;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x8981;&#x5728;Cloud Sync Service&#x4E0A;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x5916;&#xFF0C;&#x5B83;&#x8FD8;&#x5FC5;&#x987B;&#x6709;&#x6743;&#x8BBF;&#x95EE;&#x5BF9;&#x8C61;&#x5143;&#x6570;&#x636E;&#x4E2D;&#x63D0;&#x5230;&#x7684;&#x6240;&#x6709;&#x76EE;&#x6807;&#x7C7B;&#x578B;&#x3002;&#x8BE5;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x65B9;&#x5F0F;&#x6267;&#x884C;&#x6B64;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<ol>
+<li>&#x5DF2;&#x901A;&#x8FC7;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x8FDB;&#x884C;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#xFF0C;&#x8BE5;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x662F;&#x5BF9;&#x8C61;&#x7EC4;&#x7EC7;&#x4E2D;&#x7684;&#x7EC4;&#x7EC7;&#x7BA1;&#x7406;&#x5458;&#x3002;</li>
+<li>&#x901A;&#x8FC7;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x4E3A;&#x5E38;&#x89C4;&#x7528;&#x6237;&#x540E;&#xFF0C;&#x5176;&#x7528;&#x6237;&#x540D;&#x5C31;&#x5728;&#x6709;&#x5173;&#x76EE;&#x6807;&#x7C7B;&#x578B;&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x5217;&#x8868;&#x4E2D;&#x3002;</li>
+<li>&#x6709;&#x5173;&#x76EE;&#x6807;&#x7C7B;&#x578B;&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x5217;&#x8868;&#x5DF2;&#x6807;&#x8BB0;&#x4E3A;&#x53EF;&#x516C;&#x5F00;&#x8BBF;&#x95EE;&#x3002;</li>
+</ol>
+<h5 id="&#x8FB9;&#x7F18;&#x8282;&#x70B9;&#x6388;&#x6743;"><a name="&#x8FB9;&#x7F18;&#x8282;&#x70B9;&#x6388;&#x6743;" class="anchor-navigation-ex-anchor" href="#&#x8FB9;&#x7F18;&#x8282;&#x70B9;&#x6388;&#x6743;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FB9;&#x7F18;&#x8282;&#x70B9;&#x6388;&#x6743;</h5>
+<p>&#x5F53;&#x8FB9;&#x7F18;&#x8282;&#x70B9;&#x4E0A;&#x8FD0;&#x884C;&#x7684;Sync Service&#x5B9E;&#x4F8B;&#x4E0E;Cloud Sync Service&#x5B9E;&#x4F8B;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#x65F6;&#xFF0C;&#x5B83;&#x4EEC;&#x4F1A;&#x81EA;&#x884C;&#x6807;&#x8BC6;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x662F;&#x4E3A;&#x4E86;&#x9632;&#x6B62;Edge Sync Service&#x5B9E;&#x4F8B;&#x4F2A;&#x88C5;&#x6210;&#x5176;&#x4ED6;&#x67D0;&#x4E2A;&#x76EE;&#x6807;&#x3002;&#x7528;&#x4E8E;&#x8FB9;&#x7F18;&#x540C;&#x6B65;&#x670D;&#x52A1;&#x5B9E;&#x4F8B;&#x7684;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x53EF;&#x4EE5;&#x662F;&#x540C;&#x6B65;&#x670D;&#x52A1;&#x652F;&#x6301;&#x7684;&#x4EFB;&#x4F55;&#x4E00;&#x79CD;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x7C7B;&#x578B;&#x3002;&#x7279;&#x522B;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x4E3A;&#xFF1A;</p>
+<ol>
+<li>&#x8FB9;&#x7F18;&#x8282;&#x70B9;&#xFF0C;&#x8EAB;&#x4EFD;&#x5FC5;&#x987B;&#x4E0E;&#x8FB9;&#x7F18;&#x540C;&#x6B65;&#x670D;&#x52A1;&#x5B9E;&#x4F8B;&#x7684;&#x76EE;&#x6807;&#x7C7B;&#x578B;&#x548C;&#x76EE;&#x6807;ID&#x76F8;&#x5339;&#x914D;&#x3002;</li>
+<li>&#x7EC4;&#x7EC7;&#x7BA1;&#x7406;&#x5458;&#xFF0C;&#x5B83;&#x5FC5;&#x987B;&#x662F;&#x8FB9;&#x7F18;&#x8282;&#x70B9;&#x6240;&#x5728;&#x7EC4;&#x7EC7;&#x7684;&#x7BA1;&#x7406;&#x5458;&#x3002;</li>
+<li>&#x666E;&#x901A;&#x7528;&#x6237;&#xFF08;&#x8BE5;&#x7528;&#x6237;&#x7684;&#x7528;&#x6237;&#x540D;&#xFF09;&#x5FC5;&#x987B;&#x4F4D;&#x4E8E;&#x8FB9;&#x7F18;&#x540C;&#x6B65;&#x670D;&#x52A1;&#x5B9E;&#x4F8B;&#x7684;&#x76EE;&#x6807;&#x7C7B;&#x578B;&#x7684;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x5217;&#x8868;&#x4E2D;&#x3002;</li>
+</ol>
+<h4 id="&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x5217;&#x8868;"><a name="&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x5217;&#x8868;" class="anchor-navigation-ex-anchor" href="#&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x5217;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x5217;&#x8868;</h4>
+<p>&#x540C;&#x6B65;&#x670D;&#x52A1;&#x4F7F;&#x7528;&#x8BBF;&#x95EE;&#x63A7;&#x5236;&#x5217;&#x8868;&#xFF08;ACL&#xFF09;&#x6388;&#x4E88;&#x666E;&#x901A;&#x7528;&#x6237;&#x5BF9;&#x7EC4;&#x7EC7;&#x5185;&#x5BF9;&#x8C61;&#x7C7B;&#x578B;&#x548C;&#x76EE;&#x6807;&#x7C7B;&#x578B;&#x7684;&#x8BFB;&#x5199;&#x6743;&#x9650;&#x3002; &#x4F5C;&#x4E3A;&#x7EC4;&#x7EC7;&#x7BA1;&#x7406;&#x5458;&#x7684;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5728;ACL&#x4E2D;&#x6DFB;&#x52A0;&#x548C;&#x5220;&#x9664;&#x7528;&#x6237;&#x3002; 
+&#x5F53;&#x7B2C;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x7528;&#x6237;&#x540D;&#x6DFB;&#x52A0;&#x5230;&#x6709;&#x95EE;&#x9898;&#x7684;ACL&#x4E2D;&#x65F6;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;ACL&#x3002;&#x4ECE;&#x76F8;&#x5173;ACL&#x4E2D;&#x5220;&#x9664;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x7684;&#x7528;&#x6237;&#x540D;&#x540E;&#xFF0C;ACL&#x5C06;&#x81EA;&#x52A8;&#x5220;&#x9664;&#x3002; &#x5728;ACL&#x4E2D;&#x6DFB;&#x52A0;&#x7528;&#x6237;&#x540D;&#x661F;&#x53F7;&#xFF08;*&#xFF09;&#x53EF;&#x4EE5;&#x4F7F;&#x7EC4;&#x7EC7;&#x5185;&#x7684;&#x6240;&#x6709;&#x7ECF;&#x8FC7;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x7684;&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x6240;&#x6D89;&#x53CA;&#x7684;&#x5BF9;&#x8C61;&#x7C7B;&#x578B;&#x6216;&#x76EE;&#x6807;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x9002;&#x5F53;&#x7684;Sync Service RESTful API&#x7EF4;&#x62A4;ACL&#x3002; &#x6240;&#x6709;Sync Service&#x5BA2;&#x6237;&#x7AEF;SDK&#x90FD;&#x4E3A;&#x8FD9;&#x4E9B;RESTful API&#x63D0;&#x4F9B;&#x4E86;&#x4E0E;&#x8BED;&#x8A00;&#x6709;&#x5173;&#x7684;API&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="overall-architecture.html" class="navigation navigation-prev " aria-label="Previous page: 架构总览">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="network.html" class="navigation navigation-next " aria-label="Next page: 网络架构">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"云-边缘同步服务","level":"2.2","depth":1,"next":{"title":"网络架构","level":"2.3","depth":1,"path":"architecture/network.md","ref":"./architecture/network.md","articles":[]},"previous":{"title":"架构总览","level":"2.1","depth":1,"path":"architecture/overall-architecture.md","ref":"./architecture/overall-architecture.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/gripson/documentation/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"architecture/mms.md","mtime":"2021-01-18T00:05:01.102Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-18T00:05:32.987Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

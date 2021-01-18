@@ -1,0 +1,842 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Exchange组件 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="agbot.html" />
+    
+    
+    <link rel="prev" href="../quick-start/k8s-node-cluster.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Open Horizon介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">架构设计</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../architecture/overall-architecture.html">
+            
+                <a href="../architecture/overall-architecture.html">
+            
+                    
+                    架构总览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../architecture/mms.html">
+            
+                <a href="../architecture/mms.html">
+            
+                    
+                    云-边缘同步服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../architecture/network.html">
+            
+                <a href="../architecture/network.html">
+            
+                    
+                    网络架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../architecture/patterns-policies.html">
+            
+                <a href="../architecture/patterns-policies.html">
+            
+                    
+                    策略引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../architecture/SDO.html">
+            
+                <a href="../architecture/SDO.html">
+            
+                    
+                    Zero-touch之SDO组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">快速开始</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../quick-start/introduction.html">
+            
+                <a href="../quick-start/introduction.html">
+            
+                    
+                    快速入门指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../quick-start/all-in-one-vm.html">
+            
+                <a href="../quick-start/all-in-one-vm.html">
+            
+                    
+                    单机环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../quick-start/distributed-environment-vm.html">
+            
+                <a href="../quick-start/distributed-environment-vm.html">
+            
+                    
+                    分布式环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../quick-start/cli.html">
+            
+                <a href="../quick-start/cli.html">
+            
+                    
+                    快速使用CLI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../quick-start/hybrid-cloud-mgmt.html">
+            
+                <a href="../quick-start/hybrid-cloud-mgmt.html">
+            
+                    
+                    混合云部署管理中心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../quick-start/k8s-node-cluster.html">
+            
+                <a href="../quick-start/k8s-node-cluster.html">
+            
+                    
+                    K8S搭建边缘节点集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">管理中心</li>
+        
+        
+    
+        <li class="chapter active" data-level="4.1" data-path="exchange.html">
+            
+                <a href="exchange.html">
+            
+                    
+                    Exchange组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="agbot.html">
+            
+                <a href="agbot.html">
+            
+                    
+                    Agbot组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="switchboard.html">
+            
+                <a href="switchboard.html">
+            
+                    
+                    Switchboard组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">边缘节点</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../edge-node/agent.html">
+            
+                <a href="../edge-node/agent.html">
+            
+                    
+                    Horizon Agent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../edge-node/install-the-agent-vm.html">
+            
+                <a href="../edge-node/install-the-agent-vm.html">
+            
+                    
+                    安装代理 (虚拟环境)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../edge-node/install-the-agent-device.html">
+            
+                <a href="../edge-node/install-the-agent-device.html">
+            
+                    
+                    安装代理 (边缘设备)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">贡献者指南</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../contributor-guide/introduction.html">
+            
+                <a href="../contributor-guide/introduction.html">
+            
+                    
+                    参与告知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../contributor-guide/document-contribution.html">
+            
+                <a href="../contributor-guide/document-contribution.html">
+            
+                    
+                    文档贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../contributor-guide/code-contribution.html">
+            
+                <a href="../contributor-guide/code-contribution.html">
+            
+                    
+                    代码贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../contributor-guide/local-development.html">
+            
+                <a href="../contributor-guide/local-development.html">
+            
+                    
+                    本地开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Exchange组件</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#horizon-data-exchange-server&#x548C;rest-api"><b></b>Horizon Data Exchange Server&#x548C;REST API</a></li><ul><li><span class="title-icon "></span><a href="#&#x672C;&#x5730;&#x5F00;&#x53D1;&#x7684;&#x51C6;&#x5907;"><b></b>&#x672C;&#x5730;&#x5F00;&#x53D1;&#x7684;&#x51C6;&#x5907;</a></li><li><span class="title-icon "></span><a href="#&#x5728;&#x672C;&#x5730;&#x6C99;&#x7BB1;&#x4E2D;&#x6784;&#x5EFA;&#x548C;&#x8FD0;&#x884C;"><b></b>&#x5728;&#x672C;&#x5730;&#x6C99;&#x7BB1;&#x4E2D;&#x6784;&#x5EFA;&#x548C;&#x8FD0;&#x884C;</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;sbt&#x7684;&#x6280;&#x5DE7;"><b></b>&#x4F7F;&#x7528;Sbt&#x7684;&#x6280;&#x5DE7;</a></li><li><span class="title-icon "></span><a href="#&#x5728;&#x672C;&#x5730;&#x6C99;&#x7BB1;&#x4E2D;&#x8FD0;&#x884C;&#x81EA;&#x52A8;&#x6D4B;&#x8BD5;"><b></b>&#x5728;&#x672C;&#x5730;&#x6C99;&#x7BB1;&#x4E2D;&#x8FD0;&#x884C;&#x81EA;&#x52A8;&#x6D4B;&#x8BD5;</a></li><li><span class="title-icon "></span><a href="#&#x4EE3;&#x7801;&#x8986;&#x76D6;&#x7387;&#x62A5;&#x544A;"><b></b>&#x4EE3;&#x7801;&#x8986;&#x76D6;&#x7387;&#x62A5;&#x544A;</a></li><li><span class="title-icon "></span><a href="#linting"><b></b>Linting</a></li><li><span class="title-icon "></span><a href="#&#x6784;&#x5EFA;&#x548C;&#x8FD0;&#x884C;docker&#x5BB9;&#x5668;"><b></b>&#x6784;&#x5EFA;&#x548C;&#x8FD0;&#x884C;Docker&#x5BB9;&#x5668;</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;anax&#x6D4B;&#x8BD5;&#x4EA4;&#x6362;"><b></b>&#x4F7F;&#x7528;Anax&#x6D4B;&#x8BD5;&#x4EA4;&#x6362;</a></li><li><span class="title-icon "></span><a href="#&#x5C06;&#x5BB9;&#x5668;&#x90E8;&#x7F72;&#x5230;&#x6682;&#x5B58;&#x6216;&#x751F;&#x4EA7;"><b></b>&#x5C06;&#x5BB9;&#x5668;&#x90E8;&#x7F72;&#x5230;&#x6682;&#x5B58;&#x6216;&#x751F;&#x4EA7;</a></li><li><span class="title-icon "></span><a href="#&#x4E3A;&#x5206;&#x652F;&#x673A;&#x6784;&#x6784;&#x5EFA;&#x5BB9;&#x5668;"><b></b>&#x4E3A;&#x5206;&#x652F;&#x673A;&#x6784;&#x6784;&#x5EFA;&#x5BB9;&#x5668;</a></li><li><span class="title-icon "></span><a href="#&#x4EA4;&#x6362;&#x6839;&#x7528;&#x6237;"><b></b>&#x4EA4;&#x6362;&#x6839;&#x7528;&#x6237;</a></li><li><span class="title-icon "></span><a href="#&#x5C06;&#x6765;&#x7248;&#x672C;&#x4E2D;&#x53EF;&#x80FD;&#x8981;&#x505A;&#x7684;&#x5F85;&#x529E;&#x4E8B;&#x9879;"><b></b>&#x5C06;&#x6765;&#x7248;&#x672C;&#x4E2D;&#x53EF;&#x80FD;&#x8981;&#x505A;&#x7684;&#x5F85;&#x529E;&#x4E8B;&#x9879;</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="horizon-data-exchange-server&#x548C;rest-api"><a name="horizon-data-exchange-server&#x548C;rest-api" class="anchor-navigation-ex-anchor" href="#horizon-data-exchange-server&#x548C;rest-api"><i class="fa fa-link" aria-hidden="true"></i></a>Horizon Data Exchange Server&#x548C;REST API</h2>
+<p>&#x6570;&#x636E;&#x4EA4;&#x6362;API&#x4E3A;&#x4EA4;&#x6362;Web UI&#xFF08;&#x672A;&#x6765;&#xFF09;&#xFF0C;&#x8FB9;&#x7F18;&#x8282;&#x70B9;&#x548C;agreement Bots&#x63D0;&#x4F9B;API&#x670D;&#x52A1;&#x3002;</p>
+<p>&#x4EA4;&#x6362;&#x670D;&#x52A1;&#x8FD8;&#x4E3A;BH&#x5728;&#x5206;&#x6563;&#x7684;P2P&#x5DE5;&#x5177;&#x5C1A;&#x672A;&#x5145;&#x5206;&#x6269;&#x5C55;&#x7684;&#x9886;&#x57DF;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E9B;&#x5173;&#x952E;&#x670D;&#x52A1;&#x3002; &#x4E00;&#x65E6;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x5DE5;&#x5177;&#x8DB3;&#x591F;&#xFF0C;&#x5B83;&#x4EEC;&#x5C06;&#x5728;&#x4EA4;&#x6613;&#x6240;&#x4E2D;&#x66FF;&#x6362;&#x8FD9;&#x4E9B;&#x670D;&#x52A1;&#x3002;</p>
+<h3 id="&#x672C;&#x5730;&#x5F00;&#x53D1;&#x7684;&#x51C6;&#x5907;"><a name="&#x672C;&#x5730;&#x5F00;&#x53D1;&#x7684;&#x51C6;&#x5907;" class="anchor-navigation-ex-anchor" href="#&#x672C;&#x5730;&#x5F00;&#x53D1;&#x7684;&#x51C6;&#x5907;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x672C;&#x5730;&#x5F00;&#x53D1;&#x7684;&#x51C6;&#x5907;</h3>
+<ul>
+<li><p><a href="http://www.scala-lang.org/download/install.html" target="_blank">&#x5B89;&#x88C5;scala</a></p>
+</li>
+<li><p><a href="https://www.scala-sbt.org/1.x/docs/Setup.html" target="_blank">&#x5B89;&#x88C5;sbt</a></p>
+</li>
+<li><p>&#xFF08;&#x53EF;&#x9009;&#xFF09;&#x5982;&#x679C;&#x8981;&#x4ECE;scalatra.org&#x83B7;&#x53D6;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF0C;&#x8BF7;&#x5B89;&#x88C5;conscript&#x548C;giter8</p>
+</li>
+<li><p>&#x5728;&#x672C;&#x5730;&#x5B89;&#x88C5;postgresql&#xFF08;&#x9664;&#x975E;&#x60A8;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x8FDC;&#x7A0B;&#x5B9E;&#x4F8B;&#xFF09;&#x3002;&#x5728;Mac OS X&#x4E0A;&#x7684;&#x5B89;&#x88C5;&#x8BF4;&#x660E;&#xFF1A;</p>
+<ul>
+<li>&#x5B89;&#x88C5;&#xFF1A;<code>brew install postgresql</code></li>
+<li><p>&#x6CE8;&#x610F;&#xFF1A;&#x5728;docker&#x5BB9;&#x5668;&#x4E2D;&#x8FD0;&#x884C;/&#x6D4B;&#x8BD5;Exchange svr&#x65F6;&#xFF0C;&#x5B83;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x672C;&#x5730;&#x4E3B;&#x673A;&#x4E0A;&#x7684;postgres&#x5B9E;&#x4F8B;&#xFF0C;&#x56E0;&#x6B64;&#x5C06;&#x5176;&#x914D;&#x7F6E;&#x4E3A;&#x8FD8;&#x4FA6;&#x542C;&#x60A8;&#x7684;&#x672C;&#x5730;IP&#xFF1A;</p>
+<ul>
+<li><p>&#x5C06;&#x6B64;&#x8BBE;&#x7F6E;&#x4E3A;&#x60A8;&#x7684;IP&#xFF1A;export MY_IP=<my-ip></my-ip></p>
+</li>
+<li><p><code>echo &quot;host all all $MY_IP/32 trust&quot; &gt;&gt; /usr/local/var/postgres/pg_hba.conf</code></p>
+</li>
+<li><p><code>sed -i -e &quot;s/#listen_addresses = &apos;localhost&apos;/listen_addresses = &apos;$MY_IP&apos;/&quot; /usr/local/var/postgres/postgresql.conf</code></p>
+</li>
+<li><p><code>brew services start postgresql</code> &#x6216;&#x8005;&#x5982;&#x679C;&#x5B83;&#x5DF2;&#x7ECF;&#x5728;&#x8FD0;&#x884C;brew&#x670D;&#x52A1;&#xFF0C;&#x5219;&#x91CD;&#x65B0;&#x542F;&#x52A8;postgresql <code>brew services restart postgresql</code></p>
+</li>
+<li><p>&#x6216;&#x8005;&#xFF0C;&#x5982;&#x679C;&#x60A8;&#x7684;&#x6D4B;&#x8BD5;&#x8BA1;&#x7B97;&#x673A;&#x5728;&#x4E13;&#x7528;&#x5B50;&#x7F51;&#x4E2D;&#xFF1A;</p>
+<ul>
+<li>&#x4FE1;&#x4EFB;&#x5B50;&#x7F51;&#x4E0A;&#x7684;&#x6240;&#x6709;&#x5BA2;&#x6237;&#x7AEF;&#xFF1A;<code>echo&apos;host all all 192.168.1.0/24 trust&apos;&gt;&gt;</code>
+<code>/usr/local/var/postgres/pg_hba.conf</code></li>
+<li>&#x76D1;&#x542C;&#x6240;&#x6709;&#x63A5;&#x53E3;&#xFF1A;<code>sed -i -e &quot;s /&#xFF03;listen_addresses =&apos;localhost&apos;/ listen_addresses =&apos;*&apos;/&quot;</code> 
+<code>/usr/local/var/postgres/postgresql.conf</code></li>
+<li><code>brew service start postgresql</code> &#x6216;&#x8005;&#x5982;&#x679C;&#x5B83;&#x5DF2;&#x7ECF;&#x5728;&#x8FD0;&#x884C;<code>brew services restart postgresql</code></li>
+</ul>
+</li>
+<li>&#x6D4B;&#x8BD5;&#xFF1A;<code>psql&quot; host = $ MY_IP dbname = postgres user = &lt;myuser&gt; password =``&quot;</code></li>
+</ul>
+</li>
+<li>&#x5728;&#x60A8;&#x7684;&#x5F00;&#x53D1;&#x7CFB;&#x7EDF;&#x4E0A;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;<code>/etc/horizon/exchange/config.json</code>&#xFF0C;&#x8BE5;&#x6587;&#x4EF6;&#x81F3;&#x5C11;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#xFF08;&#x81EA;&#x52A8;&#x5316;&#x6D4B;&#x8BD5;&#x9700;&#x8981;&#x6B64;&#x5185;&#x5BB9;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x548C;&#x914D;&#x7F6E;&#x53D8;&#x91CF;&#x7684;&#x5B8C;&#x6574;&#x5217;&#x8868;&#x4F4D;&#x4E8E;<code>src/main/resources/config.json</code>&#xFF09;&#xFF1A;<pre><code class="lang-bash">{
+<span class="hljs-string">&quot;api&quot;</span>: {
+  <span class="hljs-string">&quot;db&quot;</span>: {
+    <span class="hljs-string">&quot;jdbcUrl&quot;</span>: <span class="hljs-string">&quot;jdbc:postgresql://localhost/postgres&quot;</span>,    // my <span class="hljs-built_in">local</span> postgres db
+    <span class="hljs-string">&quot;user&quot;</span>: <span class="hljs-string">&quot;myuser&quot;</span>,
+    <span class="hljs-string">&quot;password&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+  },
+  <span class="hljs-string">&quot;logging&quot;</span>: {
+    <span class="hljs-string">&quot;level&quot;</span>: <span class="hljs-string">&quot;DEBUG&quot;</span>
+  },
+  <span class="hljs-string">&quot;root&quot;</span>: {
+    <span class="hljs-string">&quot;password&quot;</span>: <span class="hljs-string">&quot;myrootpw&quot;</span>
+  }
+}
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li>&#x5982;&#x679C;&#x8981;&#x8FD0;&#x884C;<code>FrontEndSuite</code>&#x6D4B;&#x8BD5;&#x7C7B;&#xFF0C;&#x5219;c<code>onfig.json</code>&#x8FD8;&#x5E94;&#x5728;<code>root</code>&#x76EE;&#x5F55;&#x4E0B;&#x7684;&quot;email&quot;&#x540E;&#x9762;&#x76F4;&#x63A5;&#x5305;&#x542B;<code>&quot;frontEndHeader&quot;&#xFF1A;&quot;issuer&quot;</code>&#x3002;</li>
+<li>&#x5728;&#x60A8;&#x7684;Shell&#x73AF;&#x5883;&#x4E2D;&#x8BBE;&#x7F6E;&#x76F8;&#x540C;&#x7684;&#x4EA4;&#x6362;&#x6839;&#x5BC6;&#x7801;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;
+<code>export EXCHANGE_ROOTPW=myrootpw</code></li>
+<li>&#x5982;&#x679C;&#x5C1A;&#x672A;&#x5B8C;&#x6210;&#xFF0C;&#x8BF7;&#x521B;&#x5EFA;TLS&#x79C1;&#x94A5;&#x548C;&#x8BC1;&#x4E66;&#xFF1A;
+<code>export EXCHANGE_KEY_PW=&lt;pass-phrase&gt;
+make gen-key</code></li>
+<li>&#x5426;&#x5219;&#xFF0C;&#x8BF7;&#x4ECE;&#x521B;&#x5EFA;&#x5B83;&#x4EEC;&#x7684;&#x4EBA;&#x90A3;&#x91CC;&#x83B7;&#x53D6;&#x6587;&#x4EF6;<code>exchangecert.pem</code>&#xFF0C;<code>keypassword</code>&#x548C;<code>keystore</code>&#xFF0C;&#x5E76;&#x5C06;&#x5B83;&#x4EEC;&#x653E;&#x5728; <code>./keys/etc&#x4E2D;</code>&#x3002;</li>
+</ul>
+<h3 id="&#x5728;&#x672C;&#x5730;&#x6C99;&#x7BB1;&#x4E2D;&#x6784;&#x5EFA;&#x548C;&#x8FD0;&#x884C;"><a name="&#x5728;&#x672C;&#x5730;&#x6C99;&#x7BB1;&#x4E2D;&#x6784;&#x5EFA;&#x548C;&#x8FD0;&#x884C;" class="anchor-navigation-ex-anchor" href="#&#x5728;&#x672C;&#x5730;&#x6C99;&#x7BB1;&#x4E2D;&#x6784;&#x5EFA;&#x548C;&#x8FD0;&#x884C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5728;&#x672C;&#x5730;&#x6C99;&#x7BB1;&#x4E2D;&#x6784;&#x5EFA;&#x548C;&#x8FD0;&#x884C;</h3>
+<ul>
+<li><code>sbt</code></li>
+<li><code>~reStart</code></li>
+<li>&#x670D;&#x52A1;&#x5668;&#x542F;&#x52A8;&#x540E;&#xFF0C;&#x8981;&#x67E5;&#x770B;swagger&#x8F93;&#x51FA;&#xFF0C;&#x8BF7;&#x6D4F;&#x89C8;<code>&#xFF1A;http&#xFF1A;//localhost&#xFF1A;8080/v1/swagger</code></li>
+<li>&#x8981;&#x5C1D;&#x8BD5;&#x7B80;&#x5355;&#x7684;rest&#x65B9;curl&#xFF1A;<code>curl -X GET &quot;http&#xFF1A;//localhost&#xFF1A;8080/v1/admin /version&quot;</code>&#x3002; &#x60A8;&#x5E94;&#x8BE5;&#x83B7;&#x5F97;&#x4EA4;&#x6362;&#x7248;&#x672C;&#x53F7;&#x4F5C;&#x4E3A;&#x54CD;&#x5E94;&#x3002;</li>
+<li>&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x4FBF;&#x6377;&#x811A;&#x672C;<code>src/test/bash/primedb.sh</code>&#x6765;&#x4E3A;DB&#x586B;&#x5145;&#x4E00;&#x4E9B;&#x4EA4;&#x6362;&#x8D44;&#x6E90;&#xFF0C;&#x4EE5;&#x7528;&#x4E8E;&#x624B;&#x52A8;&#x6D4B;&#x8BD5;&#xFF1A;<pre><code class="lang-bash"><span class="hljs-built_in">export</span> EXCHANGE_USER=&lt;my-user-in-IBM-org&gt;
+<span class="hljs-built_in">export</span> EXCHANGE_PW=&lt;my-pw-in-IBM-org&gt;
+src/<span class="hljs-built_in">test</span>/bash/primedb.sh
+</code></pre>
+</li>
+<li><code>primedb.sh</code>&#x53EA;&#x4F1A;&#x521B;&#x5EFA;&#x5C1A;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x518D;&#x6B21;&#x8FD0;&#x884C;&#x5B83;&#x4EE5;&#x6062;&#x590D;&#x5DF2;&#x5220;&#x9664;&#x7684;&#x67D0;&#x4E9B;&#x8D44;&#x6E90;&#x3002;</li>
+<li>&#x8981;&#x9488;&#x5BF9;&#x73B0;&#x6709;ICP&#x7FA4;&#x96C6;&#x5728;&#x672C;&#x5730;&#x6D4B;&#x8BD5;&#x4EA4;&#x6362;&#xFF0C;&#x8BF7;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x64CD;&#x4F5C;&#xFF1A;<pre><code class="lang-bash"><span class="hljs-built_in">export</span> ICP_EXTERNAL_MGMT_INGRESS=&lt;icp-external-host&gt;:8443
+</code></pre>
+</li>
+</ul>
+<h3 id="&#x4F7F;&#x7528;sbt&#x7684;&#x6280;&#x5DE7;"><a name="&#x4F7F;&#x7528;sbt&#x7684;&#x6280;&#x5DE7;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;sbt&#x7684;&#x6280;&#x5DE7;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;Sbt&#x7684;&#x6280;&#x5DE7;</h3>
+<p>&#x5728;<code>sbt</code>&#x5B50;&#x547D;&#x4EE4;&#x63D0;&#x793A;&#x7B26;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>&#x83B7;&#x53D6;&#x4EFB;&#x52A1;&#x5217;&#x8868;&#xFF1A;<code>task -V</code></li>
+<li>&#x542F;&#x52A8;&#x60A8;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C;&#x4F7F;&#x5176;&#x5728;&#x4EE3;&#x7801;&#x66F4;&#x6539;&#x65F6;&#x91CD;&#x65B0;&#x542F;&#x52A8;&#xFF1A;<code>&#x301C;reStart</code></li>
+<li>&#x6E05;&#x9664;&#x6240;&#x6709;&#x6784;&#x5EFA;&#x6587;&#x4EF6;&#xFF08;&#x5982;&#x679C;&#x9700;&#x8981;&#x91CD;&#x7F6E;&#x589E;&#x91CF;&#x6784;&#x5EFA;&#xFF09;&#xFF1A;<code>clean</code></li>
+</ul>
+<h3 id="&#x5728;&#x672C;&#x5730;&#x6C99;&#x7BB1;&#x4E2D;&#x8FD0;&#x884C;&#x81EA;&#x52A8;&#x6D4B;&#x8BD5;"><a name="&#x5728;&#x672C;&#x5730;&#x6C99;&#x7BB1;&#x4E2D;&#x8FD0;&#x884C;&#x81EA;&#x52A8;&#x6D4B;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#&#x5728;&#x672C;&#x5730;&#x6C99;&#x7BB1;&#x4E2D;&#x8FD0;&#x884C;&#x81EA;&#x52A8;&#x6D4B;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5728;&#x672C;&#x5730;&#x6C99;&#x7BB1;&#x4E2D;&#x8FD0;&#x884C;&#x81EA;&#x52A8;&#x6D4B;&#x8BD5;</h3>
+<ul>
+<li>&#xFF08;&#x53EF;&#x9009;&#xFF09;&#x5305;&#x62EC;&#x5BF9;IBM Agbot ACL&#x7684;&#x6D4B;&#x8BD5;&#xFF1A;<code>export EXCHANGE_AGBOTAUTH = myibmagbot&#xFF1A;abcdef</code></li>
+<li>&#xFF08;&#x53EF;&#x9009;&#xFF09;&#x5305;&#x62EC;IBM IAM&#x5E73;&#x53F0;&#x5BC6;&#x94A5;&#x8BA4;&#x8BC1;&#x7684;&#x6D4B;&#x8BD5;&#xFF1A;<pre><code class="lang-bash">&#x5BFC;&#x51FA;EXCHANGE_IAM_KEY = myiamplatformkey
+&#x5BFC;&#x51FA;EXCHANGE_IAM_EMAIL=myaccountemail@something.com
+&#x5BFC;&#x51FA;EXCHANGE_IAM_ACCOUNT = myibmcloudaccountid
+</code></pre>
+</li>
+<li>&#x5728;&#x7B2C;&#x4E8C;&#x4E2A;&#x5916;&#x58F3;&#x4E2D;&#x8FD0;&#x884C;&#x81EA;&#x52A8;&#x5316;&#x6D4B;&#x8BD5;&#xFF08;&#x4EA4;&#x6362;&#x670D;&#x52A1;&#x5668;&#x4ECD;&#x5728;&#x7B2C;&#x4E00;&#x4E2A;&#x5916;&#x58F3;&#x4E2D;&#x8FD0;&#x884C;&#xFF09;&#xFF1A;<code>sbt test</code></li>
+<li>&#x4EC5;&#x8FD0;&#x884C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x81EA;&#x52A8;&#x5316;&#x6D4B;&#x8BD5;&#x5957;&#x4EF6;&#xFF08;&#x4EA4;&#x6362;&#x670D;&#x52A1;&#x5668;&#x4ECD;&#x5728;&#x8FD0;&#x884C;&#xFF09;&#xFF1A;<code>sbt&quot;testOnly **&#x3002;AgbotsSuite&quot;</code></li>
+<li>&#x8FD0;&#x884C;&#x6027;&#x80FD;&#x6D4B;&#x8BD5;&#xFF1A;<code>src/test/bash/scale/test.sh</code>&#x6216;<code>src/test/bash/scale/wrapper.sh 8</code></li>
+<li>&#x786E;&#x4FDD;&#x5728;&#x8FD0;&#x884C;<code>AgbotsSuite</code>&#x6D4B;&#x8BD5;&#x7C7B;&#x4E4B;&#x524D;&#x8FD0;&#x884C;<code>primedb.sh</code>&#x4EE5;&#x8FD0;&#x884C;&#x6240;&#x6709;&#x6D4B;&#x8BD5;&#x3002;</li>
+</ul>
+<h3 id="&#x4EE3;&#x7801;&#x8986;&#x76D6;&#x7387;&#x62A5;&#x544A;"><a name="&#x4EE3;&#x7801;&#x8986;&#x76D6;&#x7387;&#x62A5;&#x544A;" class="anchor-navigation-ex-anchor" href="#&#x4EE3;&#x7801;&#x8986;&#x76D6;&#x7387;&#x62A5;&#x544A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EE3;&#x7801;&#x8986;&#x76D6;&#x7387;&#x62A5;&#x544A;</h3>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x9879;&#x76EE;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x8986;&#x76D6;&#x7387;&#x5904;&#x4E8E;&#x7981;&#x7528;&#x72B6;&#x6001;&#x3002; sbt&#x547D;&#x4EE4;<code>sbt coverage</code>&#x53EF;&#x4EE5;&#x6253;&#x5F00;/&#x5173;&#x95ED;&#x8986;&#x76D6;&#x7387;&#x68C0;&#x67E5;&#x3002; &#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4EFD;&#x8986;&#x76D6;&#x7387;&#x62A5;&#x544A;&#xFF1A;</p>
+<ul>
+<li>&#x6267;&#x884C;<code>sbt coverage</code>&#x4EE5;&#x542F;&#x7528;&#x8986;&#x76D6;&#x3002;</li>
+<li>&#x8FD0;&#x884C;&#x6240;&#x6709;&#x6D4B;&#x8BD5;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;&#x4E0A;&#x9762;&#x7684;&#x90E8;&#x5206;&#xFF08;&#x201C;&#x5728;&#x672C;&#x5730;&#x6C99;&#x7BB1;&#x4E2D;&#x8FD0;&#x884C;&#x81EA;&#x52A8;&#x6D4B;&#x8BD5;&#x201D;&#xFF09;&#x3002;</li>
+<li>&#x521B;&#x5EFA;&#x62A5;&#x544A;&#x8FD0;&#x884C;&#x547D;&#x4EE4;<code>sbt coverageReport</code>&#x3002;</li>
+<li>&#x7EC8;&#x7AEF;&#x5C06;&#x663E;&#x793A;&#x62A5;&#x544A;&#x7684;&#x64B0;&#x5199;&#x4F4D;&#x7F6E;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x9AD8;&#x7EA7;&#x767E;&#x5206;&#x6BD4;&#x6458;&#x8981;&#x3002;</li>
+</ul>
+<h3 id="linting"><a name="linting" class="anchor-navigation-ex-anchor" href="#linting"><i class="fa fa-link" aria-hidden="true"></i></a>Linting</h3>
+<p>&#x9879;&#x76EE;&#x4F7F;&#x7528;Scapegoat&#x3002; &#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<ul>
+<li>&#x8FD0;&#x884C;<code>sbt scapegoat</code></li>
+<li>&#x7EC8;&#x7AEF;&#x5C06;&#x663E;&#x793A;&#x62A5;&#x544A;&#x7684;&#x7F16;&#x5199;&#x4F4D;&#x7F6E;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x53D1;&#x73B0;&#x7684;&#x9519;&#x8BEF;&#x548C;&#x8B66;&#x544A;&#x7684;&#x6458;&#x8981;&#x3002;</li>
+</ul>
+<h3 id="&#x6784;&#x5EFA;&#x548C;&#x8FD0;&#x884C;docker&#x5BB9;&#x5668;"><a name="&#x6784;&#x5EFA;&#x548C;&#x8FD0;&#x884C;docker&#x5BB9;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x6784;&#x5EFA;&#x548C;&#x8FD0;&#x884C;docker&#x5BB9;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6784;&#x5EFA;&#x548C;&#x8FD0;&#x884C;Docker&#x5BB9;&#x5668;</h3>
+<ul>
+<li>&#x66F4;&#x65B0;src / main / resources.version.txt&#x4E2D;&#x7684;&#x7248;&#x672C;</li>
+<li>**&#x6B64;&#x6B65;&#x9AA4;&#x5C1A;&#x4E0D;&#x53EF;&#x7528;&#xFF0C;&#x6682;&#x65F6;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x9879;&#x76EE;&#x7B26;&#x53F7;&#x4E2D;&#x7684;2&#x4E2A;&#x6B65;&#x9AA4;<ul>
+<li>&#x8981;&#x7F16;&#x8BD1;&#x672C;&#x5730;&#x4EE3;&#x7801;&#xFF0C;&#x6784;&#x5EFA;&#x4EA4;&#x6362;&#x5BB9;&#x5668;&#x5E76;&#x8FD0;&#x884C;&#x5B83;&#xFF0C;&#x8BF7;&#x8FD0;&#x884C;&#xFF1A;<code>make</code></li>
+</ul>
+</li>
+<li>&#x6216;&#x8005;&#x60A8;&#x53EF;&#x4EE5;&#x6309;&#x5355;&#x72EC;&#x7684;&#x6B65;&#x9AA4;&#x8FDB;&#x884C;&#x6784;&#x5EFA;&#x548C;&#x8FD0;&#x884C;&#xFF1A;<ul>
+<li>&#x7F16;&#x8BD1;&#x672C;&#x5730;&#x4EE3;&#x7801;&#x5E76;&#x6784;&#x5EFA;&#x4EA4;&#x6362;&#x5BB9;&#x5668;&#xFF1A;<code>make .docker-exec</code></li>
+<li>&#x5728;&#x672C;&#x5730;&#x8FD0;&#x884C;&#x5BB9;&#x5668;&#xFF1A;<code>make start-docker-exec</code></li>
+</ul>
+</li>
+<li>&#x5728;&#x672C;&#x5730;&#x624B;&#x52A8;&#x6D4B;&#x8BD5;&#x5BB9;&#x5668;&#xFF1A;<code>curl -sS -w&#xFF05;{http_code} http&#xFF1A;//localhost&#xFF1A;8080/v1/admin/version</code><ul>
+<li>&#x6CE8;&#x610F;&#xFF1A;&#x5982;&#x679C;&#x8BE5;&#x5BB9;&#x5668;&#x4EC5;&#x4FA6;&#x542C;Unix&#x57DF;&#x5957;&#x63A5;&#x5B57;&#x6216;127.0.0.1&#xFF0C;&#x5219;&#x8BE5;&#x5BB9;&#x5668;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x5728;&#x4E3B;&#x673A;&#x4E0A;&#x672C;&#x5730;&#x8FD0;&#x884C;&#x7684;postgres&#x6570;&#x636E;&#x5E93;&#x3002;&#x8BF7;&#x53C2;&#x9605;&#x4E0A;&#x9762;&#x7684;&#x201C;&#x524D;&#x63D0;&#x6761;&#x4EF6;&#x201D;&#x90E8;&#x5206;&#x3002;</li>
+</ul>
+</li>
+<li>&#x901A;&#x8FC7;https&#x624B;&#x52A8;&#x6D4B;&#x8BD5;&#x672C;&#x5730;&#x5BB9;&#x5668;&#xFF1A;<ul>
+<li>&#x5982;&#x679C;&#x5C1A;&#x672A;&#x5B89;&#x88C5;&#xFF0C;&#x8BF7;&#x8BBE;&#x7F6E;EXCHANGE_KEY_PW&#x5E76;&#x8FD0;&#x884C;<code>make gen-key</code></li>
+<li>&#x5728;<code>/etc/hosts</code>&#x4E2D;&#x6DFB;&#x52A0;<code>edge-fab-exchange</code>&#x4F5C;&#x4E3A;<code>localhost&apos;&#x7684;&#x522B;&#x540D;
+-</code>src/test/bash/https.sh&#x83B7;&#x5F97;&#x670D;&#x52A1;`</li>
+</ul>
+</li>
+<li>&#x8FD0;&#x884C;&#x81EA;&#x52A8;&#x5316;&#x6D4B;&#x8BD5;&#xFF1A;<code>sbt test</code></li>
+<li>&#x68C0;&#x67E5;&#x5BB9;&#x5668;&#x4E2D;&#x7684;swagger&#x4FE1;&#x606F;&#xFF1A;<code>http&#xFF1A;//localhost&#xFF1A;8080/v1/swagger</code></li>
+<li>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>docker logs -f exchange-api</code>&#x67E5;&#x770B;exchange svr&#x7684;&#x65E5;&#x5FD7;&#x8F93;&#x51FA;&#xFF0C;&#x6216;&#x8005;&#x4E5F;&#x53EF;&#x4EE5;&#x8F6C;&#x5230;<code>/var/log/syslog</code>&#xFF0C;&#x5177;&#x4F53;&#x53D6;&#x51B3;&#x4E8E;docker&#x548C;syslog&#x914D;&#x7F6E;&#x3002;</li>
+<li>&#x5728;&#x8FD9;&#x4E00;&#x70B9;&#x4E0A;&#xFF0C;&#x60A8;&#x53EF;&#x80FD;&#x60F3;&#x8FDB;&#x884C;<code>make clean</code>&#x64CD;&#x4F5C;&#x4EE5;&#x505C;&#x6B62;&#x672C;&#x5730;docker&#x5BB9;&#x5668;&#xFF0C;&#x4EE5;&#x4F7F;&#x5176;&#x505C;&#x6B62;&#x5728;8080&#x7AEF;&#x53E3;&#x4E0A;&#x4FA6;&#x542C;&#xFF0C;&#x5426;&#x5219;&#x5F53;&#x60A8;&#x8FD4;&#x56DE;&#x5728;&#x6C99;&#x7BB1;&#x4E2D;&#x8FD0;&#x884C;&#x65B0;&#x4EE3;&#x7801;&#x65F6;&#xFF0C;&#x60A8;&#x4F1A;&#x975E;&#x5E38;&#x56F0;&#x60D1;&#xFF0C;&#x800C;&#x60A8;&#x7684;&#x6D4B;&#x8BD5;&#x5374;&#x6CA1;&#x6709;&#x4F3C;&#x4E4E;&#x6B63;&#x5728;&#x6267;&#x884C;&#x5B83;&#x3002;</li>
+</ul>
+<h4 id="&#x5173;&#x4E8E;configexchange-apitmpl&#x7684;&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><a name="&#x5173;&#x4E8E;configexchange-apitmpl&#x7684;&#x6CE8;&#x610F;&#x4E8B;&#x9879;" class="anchor-navigation-ex-anchor" href="#&#x5173;&#x4E8E;configexchange-apitmpl&#x7684;&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5173;&#x4E8E;<code>config/exchange-api.tmpl</code>&#x7684;&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h4>
+<ul>
+<li><code>config/exchange-api.tmpl</code>&#x662F;&#x4E00;&#x4E2A;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x914D;&#x7F6E;&#x6A21;&#x677F;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E;<code>/etc/horizon/exchange/config.json</code>&#x3002;&#x6A21;&#x677F;&#x6587;&#x4EF6;&#x672C;&#x8EAB;&#x662F;&#x6784;&#x5EFA;Docker&#x6620;&#x50CF;&#x6240;&#x5FC5;&#x9700;&#x7684;&#xFF0C;&#x4F46;&#x5185;&#x5BB9;&#x4E0D;&#x662F;&#x5FC5;&#x9700;&#x7684;&#x3002;&#x5EFA;&#x8BAE;&#x5728;&#x6784;&#x5EFA;Docker&#x6620;&#x50CF;&#x65F6;&#x9ED8;&#x8BA4;&#x5185;&#x5BB9;&#x4FDD;&#x6301;&#x539F;&#x6837;&#x3002;</li>
+<li>&#x6A21;&#x677F;&#x7684;&#x5185;&#x5BB9;&#x5E03;&#x5C40;&#x4E0E;<code>/etc/horizon/exchange/config.json</code>&#x7684;&#x5E03;&#x5C40;&#x5B8C;&#x5168;&#x5339;&#x914D;&#xFF0C;&#x5E76;&#x4E14;config.json&#x7684;&#x5185;&#x5BB9;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x590D;&#x5236;&#x5E76;&#x7C98;&#x8D34;&#x5230;&#x6A21;&#x677F;&#x4E2D;&#x3002;&#x521B;&#x5EFA;Docker&#x5BB9;&#x5668;&#x65F6;&#xFF0C;&#x8FD9;&#x4F1A;&#x5C06;&#x9ED8;&#x8BA4;Exchange&#x914D;&#x7F6E;&#x8BBE;&#x7F6E;&#x4E3A;config.json&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x786C;&#x7F16;&#x7801;&#x89C4;&#x8303;&#x3002;</li>
+<li>&#x53E6;&#x5916;&#xFF0C;&#x6A21;&#x677F;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x66FF;&#x4EE3;&#x53D8;&#x91CF;&#xFF08;<code>config/exchange-api.tmpl</code>&#x7684;&#x9ED8;&#x8BA4;&#x5185;&#x5BB9;&#xFF09;&#x4EE3;&#x66FF;&#x4F7F;&#x7528;&#x786C;&#x7F16;&#x7801;&#x7684;&#x503C;&#x3002;&#x5728;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x65F6;&#xFF0C;&#x5B9E;&#x7528;&#x7A0B;&#x5E8F;<code>envsubt</code>&#x5C06;&#x7528;Docker&#xFF0C;Kubernetes&#xFF0C;Openshift&#x7B49;&#x4F20;&#x9012;&#x7ED9;&#x8FD0;&#x884C;&#x5BB9;&#x5668;&#x7684;&#x4EFB;&#x4F55;&#x76F8;&#x5E94;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x66FF;&#x6362;&#x503C;&#x3002;<ul>
+<li><code>config / exchange-api.tmpl</code>&#xFF1A;<ul>
+<li>&quot;jdbcUrl&quot;&#xFF1A;&quot;$ EXCHANGE_DB_URL&quot;</li>
+</ul>
+</li>
+<li>Kubernetes config-map&#xFF08;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x5728;&#x521B;&#x5EFA;&#x65F6;&#x4F20;&#x9012;&#x7ED9;&#x5BB9;&#x5668;&#xFF09;&#xFF1A;<ul>
+<li>&quot;$EXCHANGE_DB_URL = 192.168.0.123&quot;</li>
+</ul>
+</li>
+<li>&#x8FD0;&#x884C;&#x5BB9;&#x5668;&#x4E2D;&#x7684;&#x9ED8;&#x8BA4;<code>/etc/horizon/exchange/config.json</code>&#xFF1A;<ul>
+<li>&quot;jdbcUrl&quot;&#xFF1A;&quot;192.168.0.123&quot;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>&#x53EF;&#x4EE5;&#x5728;&#x6A21;&#x677F;&#x4E2D;&#x6DF7;&#x5408;&#x5339;&#x914D;&#x786C;&#x7F16;&#x7801;&#x503C;&#x548C;&#x66FF;&#x6362;&#x503C;&#x3002;</li>
+<li><strong><em>&#x8B66;&#x544A;</em></strong><code>envsubst</code>&#x4F1A;&#x5C1D;&#x8BD5;&#x66FF;&#x6362;&#x4EFB;&#x4F55;&#x5305;&#x542B;<code>$</code>&#x5B57;&#x7B26;&#x7684;&#x503C;&#xFF08;&#x4F8B;&#x5982;&#x54C8;&#x5E0C;&#x5BC6;&#x7801;&#xFF09;&#x3002;&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x8981;&#x4E48;&#x901A;&#x8FC7;&#x73AF;&#x5883;&#x53D8;&#x91CF;<code>$ENVSUBST_CONFIG</code>&#x5E26;&#x6709;&#x5783;&#x573E;&#x503C;&#xFF08;&#x8FD9;&#x5C06;&#x6709;&#x6548;&#x5730;&#x7981;&#x7528;<code>envsubst</code>&#xFF09;&#xFF0C;&#x8981;&#x4E48;&#x901A;&#x8FC7;&#x5305;&#x542B;&#x786E;&#x5207;&#x66FF;&#x4EE3;&#x53D8;&#x91CF;<code>envsubst</code>&#x7684;&#x503C;&#x8FDB;&#x884C;&#x66FF;&#x6362;&#xFF08;<code>$ENVSUBST_CONFIG =&apos;${ EXCHANGE_DB_URL} ${EXCHANGE_DB_USER} ${EXCHANGE_DB_PW} ${EXCHANGE_ROOT_PW} ...&apos;</code>&#xFF09;&#x548C;&#x6B63;&#x5E38;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x4E00;&#x8D77;&#x5B9E;&#x9645;&#x8FDB;&#x884C;&#x503C;&#x66FF;&#x6362;&#x3002;<ul>
+<li>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>$ENVSUBST_CONFIG</code>&#x8BBE;&#x7F6E;&#x4E3A;<code>$ENVSUBST_CONFIG =&quot;</code>&#xFF0C;&#x8FD9;&#x57FA;&#x672C;&#x4E0A;&#x662F;<code>envsubst</code>&#xFF0C;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x7684;&#x673A;&#x4F1A;&#x4E3B;&#x4E49;&#x884C;&#x4E3A;&#xFF0C;&#x5E76;&#x4F1A;&#x5728;&#x53EF;&#x80FD;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x5C1D;&#x8BD5;&#x8FDB;&#x884C;&#x4EFB;&#x4F55;/&#x6240;&#x6709;&#x66FF;&#x6362;&#x3002;</li>
+</ul>
+</li>
+<li>&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x521B;&#x5EFA;&#x65F6;&#x4F7F;&#x7528;&#x7ED1;&#x5B9A;/&#x5377;&#x6302;&#x8F7D;&#x5C06;<code>/etc/horizon/exchange/config.json</code>&#x76F4;&#x63A5;&#x4F20;&#x9012;&#x5230;&#x5BB9;&#x5668;&#x3002;&#x8FD9;&#x4F18;&#x5148;&#x4E8E;&#x6A21;&#x677F;<code>config/exchange-api.tmpl</code>&#x7684;&#x5185;&#x5BB9;&#x3002;&#x76F4;&#x63A5;&#x4F20;&#x9012;&#x7684;config.json&#x4ECD;&#x7136;&#x53D7;<code>envsubt</code>&#x5B9E;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x7EA6;&#x675F;&#xFF0C;&#x5E76;&#x4E14;&#x4E0A;&#x8FF0;&#x8B66;&#x544A;&#x4ECD;&#x7136;&#x9002;&#x7528;&#x3002;</li>
+</ul>
+<h4 id="&#x5173;&#x4E8E;docker&#x6620;&#x50CF;&#x6784;&#x5EFA;&#x8FC7;&#x7A0B;&#x7684;&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><a name="&#x5173;&#x4E8E;docker&#x6620;&#x50CF;&#x6784;&#x5EFA;&#x8FC7;&#x7A0B;&#x7684;&#x6CE8;&#x610F;&#x4E8B;&#x9879;" class="anchor-navigation-ex-anchor" href="#&#x5173;&#x4E8E;docker&#x6620;&#x50CF;&#x6784;&#x5EFA;&#x8FC7;&#x7A0B;&#x7684;&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5173;&#x4E8E;Docker&#x6620;&#x50CF;&#x6784;&#x5EFA;&#x8FC7;&#x7A0B;&#x7684;&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h4>
+<ul>
+<li>&#x53C2;&#x89C1;<a href="https://www.codemunity.io/tutorials/dockerising-akka-http/" target="_blank">https://www.codemunity.io/tutorials/dockerising-akka-http/</a></li>
+<li>&#x4F7F;&#x7528;sbt-native-packager&#x63D2;&#x4EF6;&#x3002;&#x8BF7;&#x53C2;&#x9605;&#x4E0A;&#x9762;&#x7684;URL&#xFF0C;&#x4E86;&#x89E3;&#x8981;&#x6DFB;&#x52A0;&#x5230;&#x4E0E;sbt&#x76F8;&#x5173;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x5185;&#x5BB9;</li>
+<li>&#x6784;&#x5EFA;docker&#x6620;&#x50CF;&#xFF1A;<code>sbt docker&#xFF1A;publishLocal</code></li>
+<li>&#x624B;&#x52A8;&#x751F;&#x6210;&#x5E76;&#x8FD0;&#x884C;&#x4EA4;&#x6362;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;<ul>
+<li><code>make runexecutable</code></li>
+</ul>
+</li>
+<li>&#x8981;&#x67E5;&#x770B;&#x521B;&#x5EFA;&#x7684;dockerfile&#xFF1A;<ul>
+<li><code>sbt docker&#xFF1A;stage</code></li>
+<li><code>cat target / docker / stage / Dockerfile</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x4F7F;&#x7528;anax&#x6D4B;&#x8BD5;&#x4EA4;&#x6362;"><a name="&#x4F7F;&#x7528;anax&#x6D4B;&#x8BD5;&#x4EA4;&#x6362;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;anax&#x6D4B;&#x8BD5;&#x4EA4;&#x6362;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F7F;&#x7528;Anax&#x6D4B;&#x8BD5;&#x4EA4;&#x6362;</h3>
+<p>-&#x5982;&#x679C;&#x8981;&#x5728;&#x53E6;&#x4E00;&#x53F0;&#x8BA1;&#x7B97;&#x673A;&#x4E0A;&#x4F7F;&#x7528;anax&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;&#xFF0C;&#x5219;&#x4EC5;&#x5C06;&#x7248;&#x672C;&#x6807;&#x8BB0;&#x7684;&#x4EA4;&#x6362;&#x6620;&#x50CF;&#x63A8;&#x9001;&#x5230;docker hub&#xFF0C;&#x4EE5;&#x4FBF;&#x5176;&#x4ED6;&#x8BA1;&#x7B97;&#x673A;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF1A;<code>make docker-push-version-only</code>
+-&#x7B2C;&#x4E00;&#x6B21;&#xFF1A;&#x5728;ubuntu&#x673A;&#x5668;&#x4E0A;&#xFF0C;&#x514B;&#x9686;anax&#x5B58;&#x50A8;&#x5E93;&#x5E76;&#x5B9A;&#x4E49;&#x4EE5;&#x4E0B;e2edev&#x811A;&#x672C;&#xFF1A;</p>
+<pre><code class="lang-bash">mkdir -p ~/src/github.com/open-horizon &amp;&amp; <span class="hljs-built_in">cd</span> ~/src/github.com/open-horizon &amp;&amp; git <span class="hljs-built_in">clone</span> git@github.com:open-horizon/anax.git
+<span class="hljs-comment"># See: https://github.com/open-horizon/anax/blob/master/test/README.md</span>
+<span class="hljs-keyword">if</span> [[ -z <span class="hljs-string">&quot;<span class="hljs-variable">$1</span>&quot;</span> ]]; <span class="hljs-keyword">then</span>
+    <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;Usage: e2edev &lt;exchange-version&gt;&quot;</span>
+    <span class="hljs-built_in">return</span>
+<span class="hljs-keyword">fi</span>
+<span class="hljs-built_in">set</span> <span class="hljs-_">-e</span>
+sudo systemctl stop horizon.service   <span class="hljs-comment"># this is only needed if you normally use this machine as a horizon edge node</span>
+<span class="hljs-built_in">cd</span> ~/src/github.com/open-horizon/anax
+git pull
+make clean
+make
+make fss   <span class="hljs-comment"># this might not be needed</span>
+<span class="hljs-built_in">cd</span> <span class="hljs-built_in">test</span>
+make
+make <span class="hljs-built_in">test</span> TEST_VARS=<span class="hljs-string">&quot;NOLOOP=1 TEST_PATTERNS=sall&quot;</span> DOCKER_EXCH_TAG=<span class="hljs-variable">$1</span>
+make stop
+make <span class="hljs-built_in">test</span> TEST_VARS=<span class="hljs-string">&quot;NOLOOP=1&quot;</span> DOCKER_EXCH_TAG=<span class="hljs-variable">$1</span>
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&apos;Now run: cd $HOME/src/github.com/open-horizon/anax/test &amp;&amp; make realclean &amp;&amp; sudo systemctl start horizon.service &amp;&amp; cd -&apos;</span>
+<span class="hljs-built_in">set</span> +e
+</code></pre>
+<ul>
+<li>&#x73B0;&#x5728;&#x8FD0;&#x884C;&#x6D4B;&#x8BD5;&#xFF08;&#x5927;&#x7EA6;&#x9700;&#x8981;10&#x5206;&#x949F;&#xFF09;&#xFF1A;
+```bash</li>
+<li>Now run the test (this will take about 10 minutes):
+```</li>
+</ul>
+<h3 id="&#x5C06;&#x5BB9;&#x5668;&#x90E8;&#x7F72;&#x5230;&#x6682;&#x5B58;&#x6216;&#x751F;&#x4EA7;"><a name="&#x5C06;&#x5BB9;&#x5668;&#x90E8;&#x7F72;&#x5230;&#x6682;&#x5B58;&#x6216;&#x751F;&#x4EA7;" class="anchor-navigation-ex-anchor" href="#&#x5C06;&#x5BB9;&#x5668;&#x90E8;&#x7F72;&#x5230;&#x6682;&#x5B58;&#x6216;&#x751F;&#x4EA7;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C06;&#x5BB9;&#x5668;&#x90E8;&#x7F72;&#x5230;&#x6682;&#x5B58;&#x6216;&#x751F;&#x4EA7;</h3>
+<ul>
+<li>&#x5C06;&#x5BB9;&#x5668;&#x63A8;&#x9001;&#x5230;docker hub&#x6CE8;&#x518C;&#x8868;&#xFF1A;<code>make docker-push-only</code></li>
+<li>&#x5C06;&#x65B0;&#x5BB9;&#x5668;&#x90E8;&#x7F72;&#x5230;&#x767B;&#x53F0;&#x6216;&#x751F;&#x4EA7;Docker&#x4E3B;&#x673A;<ul>
+<li>&#x786E;&#x4FDD;&#x4E0D;&#x9700;&#x8981;&#x66F4;&#x6539;/etc/horizon/exchange/config.json&#x6587;&#x4EF6;</li>
+</ul>
+</li>
+<li>&#x6D4B;&#x8BD5;&#x65B0;&#x5BB9;&#x5668;&#xFF1A;<code>curl -sS -w&#xFF05;{http_code} https&#xFF1A;// &lt;exchange-host&gt; / v1 / admin / version</code></li>
+</ul>
+<h3 id="&#x4E3A;&#x5206;&#x652F;&#x673A;&#x6784;&#x6784;&#x5EFA;&#x5BB9;&#x5668;"><a name="&#x4E3A;&#x5206;&#x652F;&#x673A;&#x6784;&#x6784;&#x5EFA;&#x5BB9;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x4E3A;&#x5206;&#x652F;&#x673A;&#x6784;&#x6784;&#x5EFA;&#x5BB9;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E3A;&#x5206;&#x652F;&#x673A;&#x6784;&#x6784;&#x5EFA;&#x5BB9;&#x5668;</h3>
+<p>&#x8981;&#x4F7F;&#x7528;&#x9488;&#x5BF9;git&#x5206;&#x652F;&#x7684;&#x4EE3;&#x7801;&#x6784;&#x5EFA;&#x4EA4;&#x6362;&#x5BB9;&#x5668;&#xFF0C;&#x8BF7;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<ul>
+<li>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5F00;&#x53D1;git&#x5206;&#x652F;A&#xFF08;&#x7ECF;&#x8FC7;&#x6D4B;&#x8BD5;&#xFF0C;&#x60A8;&#x5C06;&#x5408;&#x5E76;&#x5230;&#x5206;&#x652F;B&#xFF09;&#x3002;&#x5176;&#x4E2D;A&#x548C;B&#x53EF;&#x4EE5;&#x662F;&#x4EFB;&#x4F55;&#x5206;&#x652F;&#x540D;&#x79F0;&#x3002;</li>
+<li>&#x901A;&#x8FC7;sbt&#x5728;&#x672C;&#x5730;&#x6D4B;&#x8BD5;&#x5206;&#x652F;A&#x4EA4;&#x6362;</li>
+<li>&#x5F53;&#x6240;&#x6709;&#x6D4B;&#x8BD5;&#x901A;&#x8FC7;&#x65F6;&#xFF0C;&#x6784;&#x5EFA;&#x5BB9;&#x5668;&#xFF1A;<code>rm -f .docker-compile &amp;&amp; make .docker-exec-run TARGET_BRANCH = B</code></li>
+<li>&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x5C06;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6807;&#x8BB0;&#x4E3A;&#xFF1A;1.2.3-B&#x7684;&#x5BB9;&#x5668;</li>
+<li>&#x6D4B;&#x8BD5;&#x4EA4;&#x6362;&#x5BB9;&#x5668;</li>
+<li>&#x5F53;&#x6240;&#x6709;&#x6D4B;&#x8BD5;&#x901A;&#x8FC7;&#x65F6;&#xFF0C;&#x5C06;&#x5176;&#x63A8;&#x9001;&#x5230;docker hub&#xFF1A;<code>make docker-push-only TARGET_BRANCH = B</code></li>
+<li>&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x5C06;&#x63A8;&#x9001;&#x6807;&#x8BB0;&#x4E3A;1.2.3-B&#x548C;Latest-B&#x7684;&#x5BB9;&#x5668;</li>
+<li>&#x521B;&#x5EFA;PR&#x5C06;&#x60A8;&#x7684;&#x5F00;&#x53D1;&#x5206;&#x652F;A&#x5408;&#x5E76;&#x5230;canonical&#x5206;&#x652F;B</li>
+</ul>
+<h3 id="&#x4EA4;&#x6362;&#x6839;&#x7528;&#x6237;"><a name="&#x4EA4;&#x6362;&#x6839;&#x7528;&#x6237;" class="anchor-navigation-ex-anchor" href="#&#x4EA4;&#x6362;&#x6839;&#x7528;&#x6237;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EA4;&#x6362;&#x6839;&#x7528;&#x6237;</h3>
+<h4 id="&#x5C06;&#x54C8;&#x5E0C;&#x5BC6;&#x7801;&#x653E;&#x5165;configjson"><a name="&#x5C06;&#x54C8;&#x5E0C;&#x5BC6;&#x7801;&#x653E;&#x5165;configjson" class="anchor-navigation-ex-anchor" href="#&#x5C06;&#x54C8;&#x5E0C;&#x5BC6;&#x7801;&#x653E;&#x5165;configjson"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C06;&#x54C8;&#x5E0C;&#x5BC6;&#x7801;&#x653E;&#x5165;config.json</h4>
+<p>&#x4EA4;&#x6362;&#x6839;&#x7528;&#x6237;&#x5BC6;&#x7801;&#x5728;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF08;<code>/etc/horizon/exchange/config.json</code>&#xFF09;&#x4E2D;&#x8BBE;&#x7F6E;&#x3002;&#x4F46;&#x662F;&#x5BC6;&#x7801;&#x4E0D;&#x9700;&#x8981;&#x662F;&#x660E;&#x6587;&#x3002;&#x60A8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x65B9;&#x5F0F;&#x5BF9;&#x5BC6;&#x7801;&#x8FDB;&#x884C;&#x54C8;&#x5E0C;&#x5904;&#x7406;&#xFF1A;</p>
+<pre><code class="lang-bash">curl <span class="hljs-_">-s</span>S -X POST -H<span class="hljs-string">&quot;Authorization:Basic $ HZN_ORG_ID / $ HZN_EXCHANGE_USER_AUTH&quot;</span> -H<span class="hljs-string">&quot;Content-Type&#xFF1A;application / json&#x201D; -d&apos;{&#x201C;password&#x201D;&#xFF1A;&#x201C; PUT-PW-HERE&#x201D;}&apos;$ HZN_EXCHANGE_URL/admin/hashpw | q
+</span></code></pre>
+<p>&#x7136;&#x540E;&#x5C06;&#x8BE5;&#x54C8;&#x5E0C;&#x503C;&#x653E;&#x5728;<code>api.root.password</code>&#x5B57;&#x6BB5;&#x7684;<code>/etc/horizon/exchange/config.json</code>&#x4E2D;&#x3002;</p>
+<h4 id="&#x7981;&#x7528;root&#x7528;&#x6237;"><a name="&#x7981;&#x7528;root&#x7528;&#x6237;" class="anchor-navigation-ex-anchor" href="#&#x7981;&#x7528;root&#x7528;&#x6237;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7981;&#x7528;root&#x7528;&#x6237;</h4>
+<p>&#x5982;&#x679C;&#x8981;&#x51CF;&#x5C11;&#x4EA4;&#x6362;&#x7684;&#x653B;&#x51FB;&#x9762;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x7981;&#x7528;&#x4EA4;&#x6362;&#x6839;&#x7528;&#x6237;&#xFF0C;&#x56E0;&#x4E3A;&#x4EC5;&#x5728;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#x4E0B;&#x624D;&#x9700;&#x8981;&#x3002;&#x5EFA;&#x8BAE;&#x60A8;&#x5728;&#x7981;&#x7528;root&#x4E4B;&#x524D;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<ul>
+<li><p>&#x5728;IBM&#x7EC4;&#x7EC7;&#x4E2D;&#x521B;&#x5EFA;&#x672C;&#x5730;&#x4EA4;&#x6362;&#x7528;&#x6237;&#x3002; &#xFF08;&#x5982;&#x679C;&#x60A8;&#x60F3;&#x5728;&#x67D0;&#x4E9B;&#x65F6;&#x5019;&#x4F7F;&#x7528;<code>https&#xFF1A;//raw.githubusercontent.com/open-horizon/examples/master/tools/exchangePublishScript.sh</code>&#x66F4;&#x65B0;&#x793A;&#x4F8B;&#x670D;&#x52A1;&#xFF0C;&#x6A21;&#x5F0F;&#x548C;&#x7B56;&#x7565;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x3002;&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-bash">hzn exchange user create -u <span class="hljs-string">&quot;root/root&#xFF1A;PUT-ROOT-PW-HERE&quot;</span> -o IBM -A PUT-USER-HERE PUT-PW-HERE PUT-EMAIL-HERE
+</code></pre>
+</li>
+<li><p>&#x6388;&#x4E88;1&#x4E2A;IBM Cloud&#x7528;&#x6237;<code>admin</code>&#x7279;&#x6743;&#xFF1A;</p>
+<pre><code class="lang-bash">hzn exchange usersetadmin -u <span class="hljs-string">&quot;root/root&#xFF1A;PUT-ROOT-PW-HERE&quot;</span> -o PUT-IBM-CLOUD-ORG-HERE PUT-USER-HERE <span class="hljs-literal">true</span>
+</code></pre>
+</li>
+</ul>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;<code>/etc/horizon/exchange/config.json</code>&#x4E2D;&#x5C06;<code>api.root.enabled</code>&#x8BBE;&#x7F6E;&#x4E3A;false&#x6765;&#x7981;&#x7528;root&#x3002;</p>
+<h3 id="&#x5C06;&#x6765;&#x7248;&#x672C;&#x4E2D;&#x53EF;&#x80FD;&#x8981;&#x505A;&#x7684;&#x5F85;&#x529E;&#x4E8B;&#x9879;"><a name="&#x5C06;&#x6765;&#x7248;&#x672C;&#x4E2D;&#x53EF;&#x80FD;&#x8981;&#x505A;&#x7684;&#x5F85;&#x529E;&#x4E8B;&#x9879;" class="anchor-navigation-ex-anchor" href="#&#x5C06;&#x6765;&#x7248;&#x672C;&#x4E2D;&#x53EF;&#x80FD;&#x8981;&#x505A;&#x7684;&#x5F85;&#x529E;&#x4E8B;&#x9879;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C06;&#x6765;&#x7248;&#x672C;&#x4E2D;&#x53EF;&#x80FD;&#x8981;&#x505A;&#x7684;&#x5F85;&#x529E;&#x4E8B;&#x9879;</h3>
+<ul>
+<li>&#x7C92;&#x5EA6;&#xFF08;&#x6309;&#x7EC4;&#x7EC7;&#xFF09;&#x670D;&#x52A1;ACL&#x652F;&#x6301;&#xFF1A;<ul>
+<li>&#x6DFB;&#x52A0;&#x201C;&#x6D4F;&#x89C8;&#x201D;&#x7684;&#x8BBF;&#x95EE;&#x7C7B;&#x578B;&#xFF0C;&#x8BE5;&#x7C7B;&#x578B;&#x5C06;&#x5141;&#x8BB8;&#x67E5;&#x770B;&#x4EE5;&#x4E0B;&#x670D;&#x52A1;&#x5B57;&#x6BB5;&#xFF1A;<ul>
+<li>&#x6807;&#x7B7E;&#xFF0C;&#x8BF4;&#x660E;&#xFF0C;&#x516C;&#x5F00;&#xFF0C;&#x6587;&#x6863;&#xFF0C;URL&#xFF0C;&#x7248;&#x672C;&#xFF0C;&#x62F1;</li>
+</ul>
+</li>
+<li>&#x6DFB;&#x52A0;&#x5E26;&#x6709;&#x5B57;&#x6BB5;&#x7684;ACL&#x8868;&#x548C;&#x8D44;&#x6E90;&#xFF1A;<ul>
+<li>&#x7EC4;&#x7EC7;</li>
+<li>&#x8D44;&#x6E90;&#xFF08;&#x4F8B;&#x5982;&#x670D;&#x52A1;&#xFF09;</li>
+<li>resourceList&#xFF08;&#x4F9B;&#x5C06;&#x6765;&#x4F7F;&#x7528;&#xFF09;</li>
+<li>&#x8BF7;&#x6C42;&#x8005;&#xFF08;&#x7EC4;&#x7EC7;/&#x7528;&#x6237;&#x540D;&#xFF09;</li>
+<li>&#x8BBF;&#x95EE;</li>
+</ul>
+</li>
+<li>&#x6DFB;&#x52A0;GET&#xFF0C;PUT&#xFF0C;POST&#x4EE5;&#x7BA1;&#x7406;&#x8FD9;&#x4E9B;ACL</li>
+<li>&#x5728;GET&#x670D;&#x52A1;&#x4E0A;&#x6DFB;&#x52A0;&#x68C0;&#x67E5;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;ACL</li>
+<li>&#xFF08;&#x7A0D;&#x540E;&#xFF09;&#x8003;&#x8651;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;GET&#xFF0C;&#x8BE5;GET&#x8FD4;&#x56DE;orgType = IBM&#x7684;org&#x7684;&#x6240;&#x6709;&#x670D;&#x52A1;</li>
+</ul>
+</li>
+<li>&#x6DFB;&#x52A0;rest &#x65B9;&#x6CD5;&#x4EE5;&#x5220;&#x9664;&#x7528;&#x6237;&#x7684;&#x8FC7;&#x65F6;&#x8BBE;&#x5907;&#xFF08;carl &#x8BF7;&#x6C42;&#xFF09;</li>
+<li>&#x589E;&#x52A0;&#x4E86;&#x66F4;&#x6539;&#x8282;&#x70B9;&#x6240;&#x6709;&#x8005;&#x7684;&#x80FD;&#x529B;</li>
+<li>&#x4E3A;&#x8282;&#x70B9;&#x6CE8;&#x518C;&#x670D;&#x52A1;&#x6DFB;&#x52A0;&#x8865;&#x4E01;&#x529F;&#x80FD;</li>
+<li>&#x8003;&#x8651;&#xFF1A;<ul>
+<li>&#x68C0;&#x6D4B;&#x6A21;&#x5F0F;&#x662F;&#x5426;&#x5305;&#x542B;2&#x4E2A;&#x4F9D;&#x8D56;&#x4E8E;&#x76F8;&#x540C;&#x6392;&#x4ED6;MS&#x7684;&#x670D;&#x52A1;</li>
+<li>&#x68C0;&#x6D4B;&#x6A21;&#x5F0F;&#x662F;&#x5426;&#x5DF2;&#x4F7F;&#x7528;&#x5177;&#x6709;userInput w/o&#x9ED8;&#x8BA4;&#x503C;&#x7684;&#x670D;&#x52A1;&#x66F4;&#x65B0;&#xFF0C;&#x5E76;&#x53D1;&#x51FA;&#x8B66;&#x544A;</li>
+<li>&#x8003;&#x8651;&#x5C06;&#x6240;&#x6709;&#x521B;&#x5EFA;&#x5185;&#x5BB9;&#x66F4;&#x6539;&#x4E3A;POST&#xFF0C;&#x5E76;&#x5C06;&#xFF08;&#x901A;&#x8FC7; put/patch&#xFF09;&#x8FD4;&#x56DE;&#x7801;&#x66F4;&#x65B0;&#x4E3A;200</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../quick-start/k8s-node-cluster.html" class="navigation navigation-prev " aria-label="Previous page: K8S搭建边缘节点集群">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="agbot.html" class="navigation navigation-next " aria-label="Next page: Agbot组件">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Exchange组件","level":"4.1","depth":1,"next":{"title":"Agbot组件","level":"4.2","depth":1,"path":"management-hub/agbot.md","ref":"./management-hub/agbot.md","articles":[]},"previous":{"title":"K8S搭建边缘节点集群","level":"3.6","depth":1,"path":"quick-start/k8s-node-cluster.md","ref":"./quick-start/k8s-node-cluster.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchor-navigation-ex","edit-link","copy-code-button","theme-comscore","ga"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"night","family":"sans"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"copy-code-button":{},"ga":{"configuration":"auto","token":""},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/gripson/documentation/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"management-hub/exchange.md","mtime":"2021-01-18T00:05:01.106Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-18T00:05:32.987Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
